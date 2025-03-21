@@ -1,39 +1,33 @@
-from django.contrib.auth.models import AbstractUser, Group, Permission
 from django.db import models
+from django.contrib.auth.models import AbstractUser
+from django.core.exceptions import ValidationError
 
+# User model with mentor-specific fields
 class User(AbstractUser):
-    is_mentor = models.BooleanField(default=False)  # Differentiate between mentor & mentee
+    email = models.EmailField(unique=True)
 
-    # Add unique related_name attributes to avoid clashes
-    groups = models.ManyToManyField(
-        Group,
-        related_name="custom_user_groups",  # Unique related_name
-        blank=True,
-    )
-    user_permissions = models.ManyToManyField(
-        Permission,
-        related_name="custom_user_permissions",  # Unique related_name
-        blank=True,
-    )
+    # Common fields for all users
+    linkedin = models.URLField(blank=True, null=True)
+    github = models.URLField(blank=True, null=True)
+
+    # Mentor-specific fields (Optional at sign-up)
+    bio = models.TextField(blank=True, null=True)
+    photo = models.ImageField(upload_to='profile_photos/', blank=True, null=True)
+    skills = models.CharField(max_length=255, blank=True, null=True)
+    full_name = models.CharField(max_length=255, blank=True, null=True)
+
+    # Roles
+    is_mentor = models.BooleanField(default=False)
+    is_approved = models.BooleanField(default=False)
+
+    def save(self, *args, **kwargs):
+        # Validate mentors must have full name, bio, skills, and photo when they apply
+        if self.is_mentor:
+            if not self.full_name:
+                raise ValidationError("Mentors must provide a full name.")
+            if not self.bio or not self.photo or not self.skills:
+                raise ValidationError("Mentors must have a bio, photo, and skills.")
+        super().save(*args, **kwargs)
 
     def __str__(self):
         return self.username
-
-class Profile(models.Model):
-    user = models.OneToOneField(User, on_delete=models.CASCADE)
-    bio = models.TextField(blank=True, null=True)
-    experience_level = models.CharField(
-        choices=[("Junior", "Junior"), ("Mid", "Mid"), ("Senior", "Senior")], max_length=10
-    )
-    tech_stack = models.CharField(max_length=255, blank=True)
-    mentorship_focus = models.CharField(max_length=255, blank=True)
-    availability = models.CharField(max_length=50, blank=True)
-    contact_preference = models.CharField(
-        choices=[("Email", "Email"), ("Discord", "Discord"), ("LinkedIn", "LinkedIn")],
-        max_length=20,
-        blank=True,
-    )
-    certificate = models.FileField(upload_to="certificates/", blank=True, null=True)
-
-    def __str__(self):
-        return f"{self.user.username} Profile"
