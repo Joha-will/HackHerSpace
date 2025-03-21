@@ -18,6 +18,7 @@ media/
 
 # Ignore environment variable files
 .env
+env.py
 
 # Ignore IDE/editor directories and files
 .idea/
