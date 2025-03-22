@@ -36,7 +36,6 @@ class User(AbstractBaseUser):
         return user_role
 
 
-
 """
 # User model with mentor-specific fields
 class User(AbstractUser):
