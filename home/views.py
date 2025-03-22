@@ -13,3 +13,9 @@ def women_tech(request):
     '''
     return render(request, 'home/women_in_tech.html') 
 
+def team(request):
+    '''
+    Render Team page
+    '''
+    return render(request, 'home/team.html')  # Render the team.html template
+
