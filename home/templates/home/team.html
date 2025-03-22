@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %} Our Team {% endblock %}
+
+{% block content %}
+<section class="bg-gray-100 text-gray-800 py-10">
+  <div class="container mx-auto px-4">
+    <h1 class="text-4xl font-bold text-center mb-8 text-gray-900">Meet Our Team</h1>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- Team Member 1 -->
+      <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+        <img
+          class="w-full h-48 object-cover"
+          src="{% static 'assets/team/member1.jpg' %}"
+          alt="Team Member 1"
+        />
+        <div class="p-6">
+          <h2 class="text-2xl font-bold text-center text-gray-900">Jane Doe</h2>
+          <p class="text-center text-gray-700">Lead Developer</p>
+          <p class="mt-4 text-sm text-gray-600">
+            Jane is a passionate developer with expertise in Python and Django. She loves solving complex problems and mentoring others.
+          </p>
+        </div>
+      </div>
+      <!-- Team Member 2 -->
+      <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+        <img
+          class="w-full h-48 object-cover"
+          src="{% static 'assets/team/member2.jpg' %}"
+          alt="Team Member 2"
+        />
+        <div class="p-6">
+          <h2 class="text-2xl font-bold text-center text-gray-900">John Smith</h2>
+          <p class="text-center text-gray-700">UI/UX Designer</p>
+          <p class="mt-4 text-sm text-gray-600">
+            John specializes in creating user-friendly designs with a retro aesthetic. He ensures every project is visually stunning.
+          </p>
+        </div>
+      </div>
+      <!-- Team Member 3 -->
+      <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+        <img
+          class="w-full h-48 object-cover"
+          src="{% static 'assets/team/member3.jpg' %}"
+          alt="Team Member 3"
+        />
+        <div class="p-6">
+          <h2 class="text-2xl font-bold text-center text-gray-900">Alice Johnson</h2>
+          <p class="text-center text-gray-700">Project Manager</p>
+          <p class="mt-4 text-sm text-gray-600">
+            Alice is an experienced project manager who ensures that every project is delivered on time and meets the highest standards.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}
