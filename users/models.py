@@ -5,10 +5,6 @@ from django.core.exceptions import ValidationError
 
 
 
-
-
-
-
 # User model with mentor-specific fields
 class User(AbstractUser):
     email = models.EmailField(unique=True)
@@ -27,8 +23,22 @@ class User(AbstractUser):
     is_mentor = models.BooleanField(default=False)
     is_approved = models.BooleanField(default=False)
 
+    # Explicit related_name for groups and permissions to avoid clashes
+    groups = models.ManyToManyField(
+        'auth.Group', 
+        related_name='custom_user_groups', 
+        blank=True,
+        help_text="The groups this user belongs to."
+    )
+    user_permissions = models.ManyToManyField(
+        'auth.Permission', 
+        related_name='custom_user_permissions', 
+        blank=True,
+        help_text="Specific permissions for this user."
+    )
+
     def save(self, *args, **kwargs):
-        # Validate mentors must have full name, bio, skills, and photo when they apply
+        # Ensure that mentors must provide full_name, bio, skills, and photo before saving
         if self.is_mentor:
             if not self.full_name:
                 raise ValidationError("Mentors must provide a full name.")
