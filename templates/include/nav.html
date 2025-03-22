@@ -1,20 +1,32 @@
+{% load static %}
 
-<div class="bg-gray-100 p-4 text-px-20">
+<header class=" p-4 text-px-20">
     <div class="container max-w-screen-lg mx-auto flex justify-between items-center">
-        <!-- Logo -->
-        <a href="#" class="text-gray-900 text-2xl font-bold">Hack Her Space</a>
+      <!-- Left Text -->
+      <div class="text-gray-900 font-bold text-2xl">
+        <h1 class="font-[cursive]">Hack Her Space</h1>
+      </div>
+  
+      <!-- Right Side (Image + Text) -->
+      <div class="flex items-center space-x-4">
+        <img src="{% static '/assets/images/logo.webp' %}" alt="Logo" class="w-20 h-15">
+        <p class="text-gray-900 font-[cursive]">Breaking Barriers, <br> the Future – Women in Tech 1990.</p>
+      </div>
     </div>
-</div>
-<nav class="text-px-20 border border-black p-2">
+  </header>
+
+<nav class="text-px-20 border border-black p-1 bg-gray-400">
     <div class="container max-w-screen-lg mx-auto flex justify-between items-center">
 
 
         <!-- Menu -->
-        <div class="hidden md:flex space-x-6">
-            <a href="#" class="text-gray-900 hover:text-gray-300">Home</a>
-            <a href="#" class="text-gray-900 hover:text-gray-300">About</a>
-            <a href="#" class="text-gray-900 hover:text-gray-300">Services</a>
-            <a href="#" class="text-gray-900 hover:text-gray-300">Contact</a>
+        <div class="hidden md:flex space-x-6 font-[cursive]">
+            <a href="#" class="text-gray-900 pr-4 border-r-2 border-gary hover:text-gray-300">Home</a>
+            <a href="#" class="text-gray-900 pr-4 border-r-2 border-gary hover:text-gray-300">About</a>
+            <a href="#" class="text-gray-900 pr-4 border-r-2 border-gary hover:text-gray-300">Mentors</a>
+            <a href="#" class="text-gray-900 pr-4 border-r-2 border-gary hover:text-gray-300">Questions</a>
+            <a href="#" class="text-gray-900 pr-4 border-r-2 border-gary hover:text-gray-300">Community</a>
+            <a href="#" class="text-gray-900 pr-4 border-r-2 border-gary hover:text-gray-300">Contact</a>
         </div>
 
         <!-- Mobile Menu Button -->
@@ -24,7 +36,7 @@
     </div>
 
     <!-- Mobile Menu (Hidden by Default) -->
-    <div id="mobile-menu" class="hidden md:hidden flex flex-col space-y-2 bg-blue-700 p-4">
+    <div id="mobile-menu" class="hidden md:hidden flex flex-col space-y-2 bg-gray-400 p-4">
         <a href="#" class="text-gray-900">Home</a>
         <a href="#" class="text-gray-900">About</a>
         <a href="#" class="text-gray-900">Services</a>
