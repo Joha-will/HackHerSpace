@@ -1,10 +1,42 @@
 from django.db import models
-from django.contrib.auth.models import AbstractUser
+from django.contrib.auth.models import AbstractBaseUser, BaseUserManager
 from django.core.exceptions import ValidationError
 
 
+class User(AbstractBaseUser):
+
+    MENTOR = 1
+    STUDENT= 2
+
+    first_name = models.CharField(max_length=50)
+    last_name = models.CharField(max_length=50)
+    username = models.CharField(max_length=50, unique=True)
+    email = models.EmailField(unique=True)
+    phone_number = models.CharField(max_length=15, blank=True)
+    role = models.PositiveSmallIntegerField(choices=(
+        (MENTOR, 'Mentor'),
+        (STUDENT, 'Student'),
+    ), default=STUDENT)
+    date_joined = models.DateTimeField(auto_now_add=True)
+    last_login = models.DateTimeField(auto_now=True)
+    created_date = models.DateTimeField(auto_now=True)
+    updated_date = models.DateTimeField(auto_now=True)
+
+    USERNAME_FIELD = 'username'
+    REQUIRED_FIELDS = ['username', 'first_name', 'last_name']
+
+    def __str__(self):
+        return self.username
+    
+    def get_role(self):
+        if self.role == 1:
+            user_role = 'Mentor'
+        elif self.role == 2:
+            user_role = 'Student'
+        return user_role
 
 
+"""
 # User model with mentor-specific fields
 class User(AbstractUser):
     email = models.EmailField(unique=True)
@@ -47,4 +79,6 @@ class User(AbstractUser):
         super().save(*args, **kwargs)
 
     def __str__(self):
-        return self.username
+        return self.username"
+
+"""
