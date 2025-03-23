@@ -7,43 +7,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="stylesheet" href="{% static 'css/output.css' %}" />
- 
+
     <title>Hack Her Space</title>
     <style>
       a {
-     
-          text-decoration: underline !important;
+        text-decoration: underline !important;
       }
-      </style>
+    </style>
   </head>
 
   <body class="h-screen">
-    
-    <header class=" p-4 text-px-20">
-      {% include 'include/header.html' %}
-    </header>
+    <header class="p-4 text-px-20">{% include 'include/header.html' %}</header>
     <!-- Navbar include (Do logic to make sure this isn't visible on the create profile page after signing up =) -->
     <nav class="text-px-20 border border-black p-1 bg-gray-400">
       {% include 'include/nav.html' %}
     </nav>
-    
-    <main class="container max-w-screen-lg mx-auto flex ">
-      
-      {% block content %} 
 
-      {% endblock content%}
+    <main class="container max-w-screen-lg mx-auto flex">
+      {% block content %} {% endblock content%}
     </main>
-    
-    <footer class="mt-auto">
-      {% include 'include/footer.html' %}
-    </footer>
-  <!--  script -->
-  <script>
-    // Mobile Menu Toggle
-    document.getElementById('menu-btn').addEventListener('click', function() {
-        document.getElementById('mobile-menu').classList.toggle('hidden');
-    });
-</script>
 
+    <footer class="mt-auto">{% include 'include/footer.html' %}</footer>
+    <!--  script -->
+    <script>
+      // Mobile Menu Toggle
+      document.getElementById("menu-btn").addEventListener("click", function () {
+        document.getElementById("mobile-menu").classList.toggle("hidden");
+      });
+    </script>
   </body>
 </html>

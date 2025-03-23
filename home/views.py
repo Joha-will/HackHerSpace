@@ -10,15 +10,21 @@ def home(request):
     '''
     return render(request, 'home/index.html')
 
-def women_tech(request):
+def women_in_tech(request):
     '''
-    Render women in tech page
+    Render Women in Tech page
     '''
     return render(request, 'home/women_in_tech.html') 
 
-def contact(request):
+def team(request):
     '''
     Render Team page
+    '''
+    return render(request, 'home/team.html')
+
+def contact(request):
+    '''
+    Render Contact page
     '''
     return render(request, 'home/contact.html')  # Render the team.html template
 
