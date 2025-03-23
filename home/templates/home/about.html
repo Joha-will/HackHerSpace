@@ -5,17 +5,18 @@
 
 {% block content %}
 <!-- Header -->
-<header class="bg-gray-400 py-6 text-center w-full">
-    <h1 class="text-4xl font-bold text-white">HackHer Space</h1>
-    <p class="text-gray-300 italic">Empowering Women in Technology Since the 90s</p>
-</header>
+<div class="mt-6">
+    <header class="bg-gray-700 py-6 text-center w-full font-[cursive]">
+        <h1 class="text-4xl font-bold text-yellow-300">Empowering Women in Technology Since the 90s</h1>
+    </header>
+</div>
 
 <!-- About Us Section -->
-<section class="w-full mt-12 p-6 bg-gray-700 shadow-lg">
+<section class="w-full mt-12 p-6 bg-gray-700 shadow-lg font-[cursive]">
     <div class="max-w-6xl mx-auto">
         <h2 class="text-3xl font-bold text-yellow-300">About Us</h2>
         <p class="mt-4 text-gray-200">
-            Welcome to <span class="text-pink-400 font-bold">HackHer Space</span> – a community built by and for women in technology.
+            Welcome to <span class="text-pink-400 font-bold">HackHerSpace</span> – a community built by and for women in technology.
             Since the early **1990s**, we have been paving the way for **female coders, designers, and engineers** to break barriers in tech.
         </p>
         <p class="mt-4 text-gray-200">
@@ -26,13 +27,16 @@
 </section>
 
 <!-- Our Mission Section -->
-<section class="w-full mt-12 p-6 bg-gray-700 shadow-lg">
-    <div class="max-w-6xl mx-auto">
-        <h2 class="text-3xl font-bold text-yellow-300">Our Mission</h2>
-        <p class="mt-4 text-gray-200">
-            Our mission is simple: **empower, educate, and connect** women in tech. 
-            We provide **mentorship, resources, and a strong network** to help women succeed in the rapidly evolving world of technology.
-        </p>
-    </div>
-</section>
-    {% endblock %}
+<div class="mb-6">
+    <section class="w-full mt-12 p-6 bg-gray-700 shadow-lg font-[cursive]">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-bold text-yellow-300">Our Mission</h2>
+            <p class="mt-4 text-gray-200">
+                Our mission is simple: **empower, educate, and connect** women in tech. 
+                We provide **mentorship, resources, and a strong network** to help women succeed in the rapidly evolving world of technology.
+            </p>
+        </div>
+    </section>
+</div>
+
+{% endblock %}
