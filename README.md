@@ -108,10 +108,14 @@ Fonts weren’t agreed upon either, so I’m just as curious about the final res
 
 #### Wireframes
 
-![Hpmepage Wireframes](static/assets/wireframes/Homepage.png)
-![Women in Tech Wireframe](static/assets/wireframes/Woman%20in%20Tech%20page.png)
-![Mentor Page Wireframe](static/assets/wireframes/Mentor%20page.png)
-![Q&A Page Wireframe](static/assets/wireframes/Q&A%20page.png)
+* Hompage Wireframe ![Hpmepage Wireframes](static/assets/wireframes/Homepage.png)
+
+* Women in Tech Wireframe ![Women in Tech Wireframe](static/assets/wireframes/Woman%20in%20Tech%20page.png)
+
+* Mentor Page Wireframe ![Mentor Page Wireframe](static/assets/wireframes/Mentor%20page.png)
+
+* Q&A Wireframe ![Q&A Page Wireframe](static/assets/wireframes/Q&A%20page.png)
+
 
 ## Agile Methodology
 
@@ -122,17 +126,45 @@ Fonts weren’t agreed upon either, so I’m just as curious about the final res
 
 #### Navbar
 
+Each page features the same navbar, designed in a 90s-inspired style—grey with black text. The buttons in the navbar are centred, and there are seven links leading to different pages.
+
 #### Footer
+
+Every page also shares a minimalist footer, which contains only a simple copyright notice for a clean and consistent look.
 
 #### Home
 
+The homepage, also designed in a 90s-inspired style, is divided into three sections.
+
+At the centre is the most important part, featuring a leading text explaining what HackHer Space is and its core principles. Below this, there's a 90s-era image of a woman drinking coffee in front of a computer.
+
+On both sides, there are sidebars with links that lead nowhere—purely for aesthetic nostalgia.
+
 #### About
+
+
 
 #### Mentors
 
+The Mentors page follows the same 90s-inspired style, featuring two sidebars.
+
+In the central section, there are portraits of the available mentors, each accompanied by a short bio detailing their expertise and background.
+
 #### Questions
 
+The Q&A page is divided into two sections.
+
+On the left side, there are five topics to choose from: Python, CSS, JavaScript, HTML, and Django. Clicking on a topic reveals a set of related questions.
+
+On the right side, there is a form where users can select a topic (Python, JavaScript, etc.) and enter their question in a text area. Below, a "Submit Question" button allows users to send their queries.
+
 #### History
+
+The Women in Tech page showcases nine pioneering women selected by our team, ranging from Ada Lovelace and Frances Allen to our youngest heroine, Katie Bouman.
+
+The profiles are arranged in a 3x3 grid, with each card featuring a portrait on a solid, colourful background. The original backgrounds were removed and replaced with warm tones to contrast with the grey 90s aesthetic.
+
+When hovered over, each card reveals a quote from the featured woman. Below, a short bio highlights her contributions to technology.
 
 #### Contact
 
