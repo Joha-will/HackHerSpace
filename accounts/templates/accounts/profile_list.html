@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+
+    <h1>User List</h1>
+    <ul>
+        {% for user in users %}
+        <li>
+            <strong>{{ user.username }}</strong><br>
+            Full Name: {{ user.full_name }}<br>
+            Bio: {{ user.bio }}<br>
+            Skills: {{ user.skills }}<br>
+            LinkedIn: <a href="{{ user.linkedin }}">{{ user.linkedin }}</a><br>
+            GitHub: <a href="{{ user.github }}">{{ user.github }}</a><br>
+            Photo: {% if user.photo %}<img src="{{ user.photo.url }}" alt="Profile Photo">{% else %}No photo{% endif %}
+        </li>
+        {% empty %}
+        <li>No users found.</li>
+        {% endfor %}
+    </ul>
+
+{% endblock %}

@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% load static %}
+{% load tailwind_filters %}
+
+{% block content %}
+
+    <div>
+        <h1> Sign Up!</h1>
+    
+        <form action="{% url 'sign_up' %}" method="POST">
+            {% csrf_token %}
+            {{ form|crispy }}
+    
+            <div class="">
+                <div class="">
+                    <button type="submit">Sign Up</button>
+                </div>
+            </div>
+    
+    
+        </form>
+    
+    </div>
+
+{% endblock %}
