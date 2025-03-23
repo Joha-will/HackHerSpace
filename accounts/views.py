@@ -2,7 +2,7 @@ from django.shortcuts import redirect, render, reverse
 from django.contrib.auth import login, authenticate
 from django.contrib import messages, auth
 from .models import User
-from .forms import UserForm
+from .forms import UserForm, MentorForm
 
 
 
@@ -55,19 +55,24 @@ def sign_in(request):
     return render(request, 'accounts/registration/sign_in.html')
 
 
+def mentor_sign_up(request):
+
+    form = UserForm()
+    mentor_form = MentorForm(request.POST, request.FILES)
+
+
+    context = {
+        'form': form,
+        'mentor_form': mentor_form,
+    }
+
+    
+    return render(request, 'accounts/registration/mentor_sign_up.html', context)
+
+
 def sign_out(request):
     auth.sign_out(request)
     return redirect('home')
 
 
 
-
-
-
-"""
-# Create your views here.
-class ProfileList(generic.ListView):
-    model = User
-    template_name = "users/profile_list.html"  # Ensure this template exists
-
-"""

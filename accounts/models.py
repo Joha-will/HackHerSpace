@@ -108,6 +108,19 @@ class UserProfile(models.Model):
         return self.user.username
 
 
+class Mentor(models.Model):
+    user = models.OneToOneField(User, on_delete=models.CASCADE, related_name='user')
+    user_profile = models.OneToOneField(UserProfile, on_delete=models.CASCADE, related_name='userprofile')
+    mentor_name = models.CharField(max_length=255)
+    mentor_certificate = models.ImageField(upload_to='certificates/')
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
+    is_approved = models.BooleanField(default=False)
+
+
+    def __str__(self):
+        return self.mentor_name
+
 
 
 
