@@ -10,14 +10,33 @@
         <form action="{% url 'sign_up' %}" method="POST">
             {% csrf_token %}
             {{ form|crispy }}
-    
+
             <div class="">
+
+                <ul class="errorlist">
+                    {% for field in form %}
+                        {% if field.errors %}
+                            {% for error in field.errors %}
+                            <li class="bg-danger">{{error}}</li>
+                            {% endfor %}
+                        {% endif %}
+                    {% endfor %}
+
+                    <li class="bg-danger">{{form.non_field_errors}}</li>
+                </ul>
                 <div class="">
                     <button type="submit">Sign Up</button>
                 </div>
+                <div class="">
+                    <a href="{% url 'sign_in' %}">Already have an account? Sign-In here.</a>
+                </div>
+                <div>
+                    <div>
+                        {% include 'includes/alerts.html' %}
+                    </div>
+                </div>
+
             </div>
-    
-    
         </form>
     
     </div>
