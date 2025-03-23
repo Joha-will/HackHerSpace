@@ -1,0 +1,132 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %} Questions {% endblock %}
+
+{% block content %}
+<section class="bg-yellow-100 text-gray-800 py-10">
+  <div class="container mx-auto px-4">
+    <h1 class="text-4xl font-bold text-center mb-8 text-yellow-900">Questions & Answers</h1>
+
+    <!-- Grid Layout for Side-by-Side Sections with Increased Gap and Equal Height -->
+    <style>
+      .grid-cols-1 > div {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: auto;
+      }
+    </style>
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+      <!-- Questions & Answers Section -->
+      <div class="space-y-6">
+        <!-- Headings (Topics) -->
+        <div id="topics" class="space-y-4">
+          <!-- Topics will be dynamically added here -->
+        </div>
+
+        <!-- Questions Section -->
+        <div id="questions" class="bg-white p-6 rounded-lg shadow hidden">
+          <h2 id="topic-title" class="text-2xl font-bold text-gray-900"></h2>
+          <ul id="questions-list" class="mt-4 space-y-4">
+            <!-- Questions will be dynamically added here -->
+          </ul>
+          <button
+            id="back-button"
+            class="mt-4 px-4 py-2 bg-yellow-500 text-white rounded hover:bg-yellow-600"
+          >
+            Back to Topics
+          </button>
+        </div>
+      </div>
+
+      <!-- Question Submission Form -->
+      <div class="bg-white p-6 rounded-lg shadow">
+        <h2 class="text-2xl font-bold text-gray-900 mb-4">Submit a Question</h2>
+        <form id="question-form" method="POST">
+          {% csrf_token %}
+          <div class="mb-4">
+            <label for="heading" class="block text-gray-700 font-bold mb-2">Select a Topic:</label>
+            <select
+              id="heading"
+              name="heading"
+              class="w-full px-4 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-yellow-500"
+              required
+            >
+              <option value="Python">Python</option>
+              <option value="Django">Django</option>
+              <option value="HTML">HTML</option>
+              <option value="CSS">CSS</option>
+              <option value="JavaScript">JavaScript</option>
+            </select>
+          </div>
+          <div class="mb-4">
+            <label for="question" class="block text-gray-700 font-bold mb-2">Your Question:</label>
+            <textarea
+              id="question"
+              name="question"
+              rows="4"
+              class="w-full px-4 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-yellow-500"
+              required
+            ></textarea>
+          </div>
+          <button
+            type="submit"
+            class="px-4 py-2 bg-yellow-500 text-white rounded hover:bg-yellow-600"
+          >
+            Submit Question
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  // Load JSON data
+  const faqData = {{ faq_data|safe }};
+
+  // DOM Elements
+  const topicsDiv = document.getElementById("topics");
+  const questionsDiv = document.getElementById("questions");
+  const topicTitle = document.getElementById("topic-title");
+  const questionsList = document.getElementById("questions-list");
+  const backButton = document.getElementById("back-button");
+
+  // Populate Topics
+  Object.keys(faqData).forEach((topic) => {
+    const topicButton = document.createElement("button");
+    topicButton.textContent = topic;
+    topicButton.className =
+      "block w-full text-left px-4 py-2 bg-yellow-200 text-gray-900 rounded hover:bg-yellow-300";
+    topicButton.addEventListener("click", () => showQuestions(topic));
+    topicsDiv.appendChild(topicButton);
+  });
+
+  // Show Questions for a Topic
+  function showQuestions(topic) {
+    // Hide topics and show questions
+    topicsDiv.classList.add("hidden");
+    questionsDiv.classList.remove("hidden");
+
+    // Set topic title
+    topicTitle.textContent = topic;
+
+    // Populate questions
+    questionsList.innerHTML = "";
+    faqData[topic].forEach((item) => {
+      const questionItem = document.createElement("li");
+      questionItem.className = "bg-yellow-100 p-4 rounded shadow";
+      questionItem.innerHTML = `<strong>${item.question}</strong><p class="mt-2">${item.answer}</p>`;
+      questionsList.appendChild(questionItem);
+    });
+  }
+
+  // Back to Topics
+  backButton.addEventListener("click", () => {
+    // Hide questions and show topics
+    questionsDiv.classList.add("hidden");
+    topicsDiv.classList.remove("hidden");
+  });
+</script>
+{% endblock %}
