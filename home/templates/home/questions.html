@@ -5,13 +5,19 @@
 
 {% block content %}
 
+
+
+
+  
+
 <div class="text-center mb-6 font-[cursive] mt-6">
   <p class="text-lg text-black-200">Welcome to the Questions & Answers section. Explore topics or submit your own questions below!</p>
 </div>
 <section class="bg-gray-700 text-gray-800 py-10 font-[cursive]">
 
+  
   <div class="container mx-auto px-4">
-    <h1 class="text-4xl font-bold text-center mb-8 text-yellow-300">Questions & Answers</h1>
+    <h1 class="text-4xl font-bold text-center mb-8 text-yellow-900">Questions & Answers</h1>
 
     <!-- Grid Layout for Side-by-Side Sections with Increased Gap and Equal Height -->
     <style>
@@ -24,7 +30,7 @@
     </style>
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
       <!-- Questions & Answers Section -->
-      <div class="bg-white p-6 rounded-lg shadow">
+      <div class="bg-yellow-200 p-6 rounded-lg shadow">
         <h2 class="text-2xl font-bold text-gray-900 mb-4">Explore Topics</h2>
         <div class="space-y-6">
           <!-- Headings (Topics) -->
@@ -58,7 +64,7 @@
             <select
               id="heading"
               name="heading"
-              class="w-full px-4 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-yellow-300"
+              class="w-full px-4 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-yellow-500"
               required
             >
               <option value="Python">Python</option>
@@ -80,7 +86,8 @@
           </div>
           <button
             type="submit"
-            class="px-4 py-2 bg-gray-400 text-black rounded hover:bg-yellow-600">
+            class="px-4 py-2 bg-gray-400 text-black rounded hover:bg-yellow-600"
+          >
             Submit Question
           </button>
         </form>
