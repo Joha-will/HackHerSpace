@@ -171,6 +171,8 @@ When hovered over, each card reveals a quote from the featured woman. Below, a s
 
 ## Technologies Used
 
+* HTML, CSS, Tailwind CSS, Python, JavaScript were used as the languages/frameworks.
+
 * [Birme](https://www.birme.net/?image_format=webp&quality_webp=60) to resize, crop, compress and change the image format to WEBP.
 
 * [Pixabay](https://pixabay.com/vectors/girl-laptop-type-typing-woman-158465/) to downland the images for the logo and favicon.
@@ -180,6 +182,8 @@ When hovered over, each card reveals a quote from the featured woman. Below, a s
 * [GitHub](https://github.com/) to store the project, project board and collaboration.
 
 * [Remove bg](https://www.remove.bg/) to remove the background and add a solid colour background for portrait photos.
+
+* [Canva](https://www.canva.com/) was used to create logo, wireframes.
 
 ## Code
 
@@ -197,14 +201,55 @@ When hovered over, each card reveals a quote from the featured woman. Below, a s
 
 ## Deployment
 
+This project was deployed on Heroku.
+
+Deploying the Project on Heroku:
+
+
+
+
+
 ## Maintaince & Updates
 
 ## Credits
 
 ### Media
 
+#### Images
+
+* Images for the Women in Tech / History page.
+All Images were sourced from [Wikimedia Commons](https://commons.wikimedia.org/). With the exception of three, all required attribution under their respective copyright licenses.
+
+    * [Dr Fei-Fei Li](https://commons.wikimedia.org/wiki/File:Fei-Fei_Li_at_AI_for_Good_2017.jpg);
+ Attribution: ITU Pictures, CC BY 2.0 <https://creativecommons.org/licenses/by/2.0>, via Wikimedia Commons
+
+    * [Parisa Tabriz](https://commons.wikimedia.org/wiki/File:Parisa_Tabriz_Blackhat%2717_profile.jpg); Attribution:
+mrisher, CC BY-SA 4.0 <https://creativecommons.org/licenses/by-sa/4.0>, via Wikimedia Commons
+
+    * [Katie Bouman](https://commons.wikimedia.org/wiki/File:Katie_Bouman_answers_questions_about_the_Event_Horizon_Telescope_project.jpg); Attribution:
+Credit: NSF, Public domain, via Wikimedia Commons
+
+    * [Timnit Gebru](https://commons.wikimedia.org/wiki/File:Timnit_Gebru_crop.jpg); Attribution:
+https://commons.wikimedia.org/wiki/File:Timnit_Gebru_crop.jpg
+
+    * [Radia Perlman](https://commons.wikimedia.org/wiki/File:Radia_Perlman_2009.jpg); Attribution:
+Scientist-100 at English Wikipedia, Public domain, via Wikimedia Commons
+
+    * [Frances Allen](https://commons.wikimedia.org/wiki/File:Allen_mg_2545-b.jpg); Attribution:
+Rama, CC BY-SA 2.0 FR <https://creativecommons.org/licenses/by-sa/2.0/fr/deed.en>, via Wikimedia Commons
+
+    * [Barbara Liskov](https://commons.wikimedia.org/wiki/File:Turing_Centenary_Celebration_Liskov.jpg); Attribution:
+Dennis Hamilton from Seattle, Washington, USA, CC BY 2.0 <https://creativecommons.org/licenses/by/2.0>, via Wikimedia Commons
+
+    * [Rana el Kaliouby](https://commons.wikimedia.org/wiki/File:Rana_El_Kaliouby.jpg); Cairue, CC BY-SA 4.0 <https://creativecommons.org/licenses/by-sa/4.0>, via Wikimedia Commons
+
+    * [Ada Lovelace](https://commons.wikimedia.org/wiki/File:Ada_Lovelace_Chalon_portrait.jpg); Attribution:
+Alfred Edward Chalon, Public domain, via Wikimedia Commons
+
+
+* The illustration for the logo and the favicon was found on [Pixabay](https://pixabay.com/vectors/girl-laptop-type-typing-woman-158465/)
+
+
 ### Content
 
-### Design
-
-
+* [ChatGPT](https://openai.com/chatgpt/overview/) was used to review for spelling, grammar and consistency, and enhanced the content. Additionally, ChatGPT helped by providing information on the Women in Tech page.
