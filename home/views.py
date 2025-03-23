@@ -10,7 +10,7 @@ def home(request):
     '''
     return render(request, 'home/index.html')
 
-def women_tech(request):
+def women_in_tech(request):
     '''
     Render women in tech page
     '''
