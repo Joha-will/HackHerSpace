@@ -5,7 +5,13 @@
 {% include 'includes/left_sidebar.html' %}
        
 <!-- Main Content (Fixed Width or Flexible) -->
-<main class=" p-6 bg-white mx-auto font-[cursive]">
+<main class=" p-6 bg-white w-full mx-auto font-[cursive]">
+
+
+  
+  
+      <h1 class="text-4xl bg-gray-700 font-bold text-yellow-300 p-4 rounded-lg shadow-lg">WELCOME!</h1>
+      <p class="mt-4 text-gray-600">HackHer Space is a community-driven platform dedicated to empowering women in technology. Whether you're a seasoned developer, an aspiring coder, or simply passionate about innovation, this is your space to learn, create, and connect. We believe in breaking barriers, fostering inclusivity, and championing the next generation of women in tech.
 
   <!-- Main Content (Fixed Width or Flexible) -->
   <main class="p-6 bg-white mx-auto font-[cursive]">
@@ -23,11 +29,17 @@
   </main>
 
         Join us as we explore the latest in coding, cybersecurity, AI, and beyond—because the future of tech is diverse, and it starts with you.</p>
+        <div class="mt-6">
+        </div>
         <img src="{% static '/assets/images/womenin90.jpeg' %}" alt="Logo" >
   
     </main>
     
+
+    {% include 'includes/right_sidebar.html' %}  
+
     {% include 'includes/right_sidebar.html' %}
+
 </div>
 
 {% endblock %}
