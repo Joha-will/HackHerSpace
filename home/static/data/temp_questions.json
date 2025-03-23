@@ -2,5 +2,21 @@
     {
         "heading": "HTML",
         "question": "How can I create 2 navbars?"
+    },
+    {
+        "heading": "CSS",
+        "question": "What is better? Bootstrap or Tailwind?"
+    },
+    {
+        "heading": "HTML",
+        "question": "How to create navbar?"
+    },
+    {
+        "heading": "HTML",
+        "question": "How to create navbar?"
+    },
+    {
+        "heading": "CSS",
+        "question": "Hello"
     }
 ]

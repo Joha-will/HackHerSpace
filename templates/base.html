@@ -14,7 +14,9 @@
       a {
         text-decoration: underline !important;
       }
-    </style>
+
+      </style>
+
   </head>
 
   <body class="h-screen">
@@ -24,8 +26,13 @@
       {% include 'includes/nav.html' %}
     </nav>
 
-    <main class="container max-w-screen-lg mx-auto flex">
-      {% block content %} {% endblock content%}
+    <main class="container max-w-screen-lg mx-auto">
+
+        {% block content %} 
+
+        {% endblock content%}
+      
+
     </main>
 
     <footer class="mt-auto">{% include 'includes/footer.html' %}</footer>

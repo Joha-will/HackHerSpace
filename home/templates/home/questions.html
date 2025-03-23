@@ -19,24 +19,27 @@
     </style>
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
       <!-- Questions & Answers Section -->
-      <div class="space-y-6">
-        <!-- Headings (Topics) -->
-        <div id="topics" class="space-y-4">
-          <!-- Topics will be dynamically added here -->
-        </div>
+      <div class="bg-yellow-200 p-6 rounded-lg shadow">
+        <h2 class="text-2xl font-bold text-gray-900 mb-4">Explore Topics</h2>
+        <div class="space-y-6">
+          <!-- Headings (Topics) -->
+          <div id="topics" class="space-y-4">
+            <!-- Topics will be dynamically added here -->
+          </div>
 
-        <!-- Questions Section -->
-        <div id="questions" class="bg-white p-6 rounded-lg shadow hidden">
-          <h2 id="topic-title" class="text-2xl font-bold text-gray-900"></h2>
-          <ul id="questions-list" class="mt-4 space-y-4">
-            <!-- Questions will be dynamically added here -->
-          </ul>
-          <button
-            id="back-button"
-            class="mt-4 px-4 py-2 bg-yellow-500 text-white rounded hover:bg-yellow-600"
-          >
-            Back to Topics
-          </button>
+          <!-- Questions Section -->
+          <div id="questions" class="bg-white p-6 rounded-lg shadow hidden">
+            <h2 id="topic-title" class="text-2xl font-bold text-gray-900"></h2>
+            <ul id="questions-list" class="mt-4 space-y-4">
+              <!-- Questions will be dynamically added here -->
+            </ul>
+            <button
+              id="back-button"
+              class="mt-4 px-4 py-2 bg-gray-400 text-black rounded hover:bg-yellow-600"
+            >
+              Back to Topics
+            </button>
+          </div>
         </div>
       </div>
 
@@ -72,7 +75,7 @@
           </div>
           <button
             type="submit"
-            class="px-4 py-2 bg-yellow-500 text-white rounded hover:bg-yellow-600"
+            class="px-4 py-2 bg-gray-400 text-black rounded hover:bg-yellow-600"
           >
             Submit Question
           </button>
@@ -98,7 +101,7 @@
     const topicButton = document.createElement("button");
     topicButton.textContent = topic;
     topicButton.className =
-      "block w-full text-left px-4 py-2 bg-yellow-200 text-gray-900 rounded hover:bg-yellow-300";
+      "block w-full text-left px-4 py-2 bg-yellow-300 text-gray-900 rounded hover:bg-yellow-400";
     topicButton.addEventListener("click", () => showQuestions(topic));
     topicsDiv.appendChild(topicButton);
   });
