@@ -1,5 +1,22 @@
 # HackHerSpace
 
+# Table of Contents
+- [User Experience](#user-experience)
+    - [Project Goals](#project-goals)
+    - [User Stories](#user-stories)
+    - [Design](#design)
+- [Agile Methodology](#agile-methodology)
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Code](#code)
+- [Testing](#testing)
+    - [Bugs](#bugs)
+    - [Testing User Stories](#testing-user-stories)
+    - [Manual Testing](#manual-testing)
+- [Deployment](#deployment)
+- [Maintenance](#maintenance--updates)
+- [Credits](#credits)
+
 ## User Experience
 
 ### Project Goals
@@ -209,7 +226,7 @@ Deploying the Project on Heroku:
 
 
 
-## Maintaince & Updates
+## Maintenance & Updates
 
 ## Credits
 
