@@ -108,8 +108,10 @@ Fonts weren’t agreed upon either, so I’m just as curious about the final res
 
 #### Wireframes
 
-![Hpmepage Wireframes sketch](image.png)
-![Women in Tech Wireframe sketch](image-1.png)
+![Hpmepage Wireframes](static/assets/wireframes/Homepage.png)
+![Women in Tech Wireframe](static/assets/wireframes/Woman%20in%20Tech%20page.png)
+![Mentor Page Wireframe](static/assets/wireframes/Mentor%20page.png)
+![Q&A Page Wireframe](static/assets/wireframes/Q&A%20page.png)
 
 ## Agile Methodology
 
@@ -146,7 +148,7 @@ Fonts weren’t agreed upon either, so I’m just as curious about the final res
 * [GitHub](https://github.com/) to store the project, project board and collaboration.
 
 * [Remove bg](https://www.remove.bg/) to remove the background and add a solid colour background for portrait photos.
- 
+
 ## Code
 
 ## Testing
