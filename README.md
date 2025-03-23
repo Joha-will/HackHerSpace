@@ -1,4 +1,7 @@
+
 # HackHerSpace
+
+![Logo](static/assets/Images/HackHerSpace-logo.webp) 
 
 # Table of Contents
 - [User Experience](#user-experience)
@@ -17,7 +20,7 @@
 - [Maintenance](#maintenance--updates)
 - [Credits](#credits)
 
-## User Experience
+## ![favicon](static/assets/favicon/favicon-16x16.png) User Experience
 
 ### Project Goals
 HackHerSpace is a project by 5Stars Team with the primary goal of uplifting, supporting, and inspiring women in coding and STEM fields. 5Stars Team aims to create a welcoming and inclusive community where women of all ages, backgrounds, and experiences can pursue their dreams in the tech industry.
@@ -134,12 +137,14 @@ Fonts weren’t agreed upon either, so I’m just as curious about the final res
 * Q&A Wireframe ![Q&A Page Wireframe](static/assets/wireframes/Q&A%20page.png)
 
 
-## Agile Methodology
+## ![favicon](static/assets/favicon/favicon-16x16.png) Agile Methodology
 
 #### Kanban Board
 
+The project's Kanban Board can be viewed [here](https://github.com/users/Joha-will/projects/10)
 
-## Features
+
+## ![favicon](static/assets/favicon/favicon-16x16.png) Features
 
 #### Navbar
 
@@ -186,7 +191,7 @@ When hovered over, each card reveals a quote from the featured woman. Below, a s
 #### Contact
 
 
-## Technologies Used
+## ![favicon](static/assets/favicon/favicon-16x16.png) Technologies Used
 
 * HTML, CSS, Tailwind CSS, Python, JavaScript were used as the languages/frameworks.
 
@@ -202,9 +207,9 @@ When hovered over, each card reveals a quote from the featured woman. Below, a s
 
 * [Canva](https://www.canva.com/) was used to create logo, wireframes.
 
-## Code
+## ![favicon](static/assets/favicon/favicon-16x16.png) Code
 
-## Testing
+## ![favicon](static/assets/favicon/favicon-16x16.png) Testing
 
 ### Bugs
 
@@ -216,7 +221,7 @@ When hovered over, each card reveals a quote from the featured woman. Below, a s
 
 ### Accessibility
 
-## Deployment
+## ![favicon](static/assets/favicon/favicon-16x16.png) Deployment
 
 This project was deployed on Heroku.
 
@@ -226,9 +231,9 @@ Deploying the Project on Heroku:
 
 
 
-## Maintenance & Updates
+## ![favicon](static/assets/favicon/favicon-16x16.png) Maintenance & Updates
 
-## Credits
+## ![favicon](static/assets/favicon/favicon-16x16.png) Credits
 
 ### Media
 
