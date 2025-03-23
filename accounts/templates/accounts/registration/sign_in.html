@@ -3,34 +3,47 @@
 
 {% block content %}
 
-    <div>
-        <h1> Sign In!</h1>
-    
-        <form action="{% url 'sign_in' %}" method="POST" enctype="multipart/form-data">
-            {% csrf_token %}
-            <div>
-    
-                <div>
-                    <div>
-                        <label>Email Address</label>
-                        <input type="text" name="username" placeholder="Enter your username">
-                    </div>
-                </div>
-                <div>
-                    <div>
-                        <label>Password</label>
-                        <input type="password" name="password" placeholder="Enter your password">
-                    </div>
-                </div>
-    
-            </div>
-            <button type="submit">Sign Up</button>
 
+<div class="flex  justify-center  font-[cursive]">
+    <div class="w-full max-w-md p-6 mt-4 mb-4 shadow-lg font-mono font-bold border-2 border-black">
+        
+        <!-- 90s Header -->
+        <h2 class="text-2xl text-center font-bold tracking-widest text-grey-700 uppercase font-[cursive]">
+            ✨ Welcome Back ✨
+        </h2>
+        <p class="text-center text-grey-700 bg-gray-400 mt-2 italic">
+            HackHer Space – Login to Continue
+        </p>
+
+        <!-- Signup Form -->
+        <form method="POST" class="mt-6 space-y-4 font-[cursive]">
+            {% csrf_token %}
+             <!-- Username Field -->
+             <label for="id_username" class="block text-gray-700 text-sm font-bold mb-2">Username</label>
+             <input type="text" name="username" id="id_username" placeholder="Enter your username" 
+                 class="textinput appearance-none border block leading-normal border-gray-300 rounded-lg py-2 px-4 focus:outline-none bg-white w-full text-gray-700">
+ 
+             <!-- Password Field -->
+             <label for="id_password" class="block text-gray-700 text-sm font-bold mb-2">Password</label>
+             <input type="password" name="password" id="id_password" placeholder="Enter your password"
+                 class="textinput appearance-none border block leading-normal border-gray-300 rounded-lg py-2 px-4 focus:outline-none bg-white w-full text-gray-700">
+ 
+            <button type="submit" class="w-full  py-2 text-lg font-bold border-2 border-black hover:bg-grey-700">
+                🚀 Login
+            </button>
             <div>
                 {% include 'includes/alerts.html' %}
             </div>
         </form>
-    
+
+        <!-- 90s Footer -->
+        <p class="mt-4 text-center text-grey-700 text-sm font-[cursive]">
+            Don't have an account? <a href="{% url 'sign_up' %}" class="text-yellow-300 hover:underline">Register</a>
+        </p>
     </div>
+</div>
+
+
+
 
 {% endblock %}
