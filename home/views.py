@@ -28,18 +28,6 @@ def contact(request):
     '''
     return render(request, 'home/contact.html')  # Render the team.html template
 
-def mentor(request):
-    '''
-    Render mentor page
-    '''
-    return render(request, 'home/mentor.html')  # Render the team.html template
-
-def about(request):
-    '''
-    Render about page
-    '''
-    return render(request, 'home/about.html')  # Render the team.html template
-
 def questions(request):
     # Load the JSON file
     json_file_path = os.path.join(settings.BASE_DIR, 'home/static/data/faq.json')

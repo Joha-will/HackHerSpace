@@ -6,8 +6,5 @@ urlpatterns = [
     path('women_in_tech/', views.women_in_tech, name='women_in_tech'),  # Women in Tech page
     path('team/', views.team, name='team'),  # Team page
     path('contact/', views.contact, name='contact'),  # Team page
-    path('about/', views.about, name='about'),  # Team page
     path('questions/', views.questions, name='questions'),  # Questions page
-    path('mentor/', views.mentor, name='mentor'),  # Mentor page
-    
 ]

@@ -1,22 +1,36 @@
 {% extends "base.html" %} {% load static %} {% block title %} Home {% endblock %}
 {% block content %}
 
-<div class="flex">
-{% include 'include/left_sidebar.html' %}
-       
-<!-- Main Content (Fixed Width or Flexible) -->
-<main class=" p-6 bg-white mx-auto font-[cursive]">
-
   
+  <div class="flex min-h-screen">
+    <!-- Left Sidebar (Fixed Width) -->
+    <aside class="w-96 bg-gray-400 text-white p-6">
+      <h2 class="text-lg font-bold">Available Mentors</h2>
+      <ul class="mt-4 space-y-2">
+        <li><a href="#" class="underline !text-decoration-underline">Sophia Rivera – Senior Software Engineer</a></li>
+        <li><a href="#" class="block hover:text-blue-300 underline">Aisha Patel – Data Scientist</a></li>
+        <li><a href="#" class="block hover:text-blue-300 underline">Fatima Al-Mansoori – Full-stack Web Developer (C# & C Expert)</a></li>
+      </ul>
+    </aside>
+    <!-- Main Content (Fixed Width or Flexible) -->
+    <main class="flex-1 max-w-4xl p-6 bg-white mx-auto font-[cursive]">
       <h1 class="text-2xl font-bold text-gray-800">Welcome to HackHer Space!</h1>
       <p class="mt-4 text-gray-600">HackHer Space is a community-driven platform dedicated to empowering women in technology. Whether you're a seasoned developer, an aspiring coder, or simply passionate about innovation, this is your space to learn, create, and connect. We believe in breaking barriers, fostering inclusivity, and championing the next generation of women in tech.
 
         Join us as we explore the latest in coding, cybersecurity, AI, and beyond—because the future of tech is diverse, and it starts with you.</p>
         <img src="{% static '/assets/images/womenin90.jpeg' %}" alt="Logo" >
-  
     </main>
-    
-    {% include 'include/right_sidebar.html' %}  
-</div>
+
+ 
+  </div>
+  <div class="mt-6 p-4 bg-pink-600 rounded-lg text-center shadow-lg">
+    <h3 class="text-lg font-bold">🚀 Join HackHer Space!</h3>
+    <p class="text-sm mt-2">Empowering women in tech. Be part of the change!</p>
+    <a href="#" class="inline-block mt-4 bg-white text-pink-600 px-4 py-2 rounded-full font-bold hover:bg-gray-200">
+      Sign Up Now
+    </a>
+    <img class="mt-4" src="{% static '/assets/images/ad.jpg' %}" alt="Logo" >
+    <a href="https://www.amazon.ca/Women-Tech-Practical-Inspiring-Stories/dp/1632170663" target="_blank">Women in Tech: Take Your Career to the Next Level with Practical Advice and Inspiring Stories</a>
+  </div>
 
 {% endblock %}
