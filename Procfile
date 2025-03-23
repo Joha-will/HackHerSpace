@@ -1,0 +1,1 @@
+web: gunicorn she_mentors_main.wsgi
