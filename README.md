@@ -108,10 +108,14 @@ Fonts weren’t agreed upon either, so I’m just as curious about the final res
 
 #### Wireframes
 
-![Hpmepage Wireframes](static/assets/wireframes/Homepage.png)
-![Women in Tech Wireframe](static/assets/wireframes/Woman%20in%20Tech%20page.png)
-![Mentor Page Wireframe](static/assets/wireframes/Mentor%20page.png)
-![Q&A Page Wireframe](static/assets/wireframes/Q&A%20page.png)
+* Hompage Wireframe ![Hpmepage Wireframes](static/assets/wireframes/Homepage.png)
+
+* Women in Tech Wireframe ![Women in Tech Wireframe](static/assets/wireframes/Woman%20in%20Tech%20page.png)
+
+* Mentor Page Wireframe ![Mentor Page Wireframe](static/assets/wireframes/Mentor%20page.png)
+
+* Q&A Wireframe ![Q&A Page Wireframe](static/assets/wireframes/Q&A%20page.png)
+
 
 ## Agile Methodology
 
@@ -122,22 +126,52 @@ Fonts weren’t agreed upon either, so I’m just as curious about the final res
 
 #### Navbar
 
+Each page features the same navbar, designed in a 90s-inspired style—grey with black text. The buttons in the navbar are centred, and there are seven links leading to different pages.
+
 #### Footer
+
+Every page also shares a minimalist footer, which contains only a simple copyright notice for a clean and consistent look.
 
 #### Home
 
+The homepage, also designed in a 90s-inspired style, is divided into three sections.
+
+At the centre is the most important part, featuring a leading text explaining what HackHer Space is and its core principles. Below this, there's a 90s-era image of a woman drinking coffee in front of a computer.
+
+On both sides, there are sidebars with links that lead nowhere—purely for aesthetic nostalgia.
+
 #### About
+
+
 
 #### Mentors
 
+The Mentors page follows the same 90s-inspired style, featuring two sidebars.
+
+In the central section, there are portraits of the available mentors, each accompanied by a short bio detailing their expertise and background.
+
 #### Questions
 
+The Q&A page is divided into two sections.
+
+On the left side, there are five topics to choose from: Python, CSS, JavaScript, HTML, and Django. Clicking on a topic reveals a set of related questions.
+
+On the right side, there is a form where users can select a topic (Python, JavaScript, etc.) and enter their question in a text area. Below, a "Submit Question" button allows users to send their queries.
+
 #### History
+
+The Women in Tech page showcases nine pioneering women selected by our team, ranging from Ada Lovelace and Frances Allen to our youngest heroine, Katie Bouman.
+
+The profiles are arranged in a 3x3 grid, with each card featuring a portrait on a solid, colourful background. The original backgrounds were removed and replaced with warm tones to contrast with the grey 90s aesthetic.
+
+When hovered over, each card reveals a quote from the featured woman. Below, a short bio highlights her contributions to technology.
 
 #### Contact
 
 
 ## Technologies Used
+
+* HTML, CSS, Tailwind CSS, Python, JavaScript were used as the languages/frameworks.
 
 * [Birme](https://www.birme.net/?image_format=webp&quality_webp=60) to resize, crop, compress and change the image format to WEBP.
 
@@ -148,6 +182,8 @@ Fonts weren’t agreed upon either, so I’m just as curious about the final res
 * [GitHub](https://github.com/) to store the project, project board and collaboration.
 
 * [Remove bg](https://www.remove.bg/) to remove the background and add a solid colour background for portrait photos.
+
+* [Canva](https://www.canva.com/) was used to create logo, wireframes.
 
 ## Code
 
@@ -165,14 +201,55 @@ Fonts weren’t agreed upon either, so I’m just as curious about the final res
 
 ## Deployment
 
+This project was deployed on Heroku.
+
+Deploying the Project on Heroku:
+
+
+
+
+
 ## Maintaince & Updates
 
 ## Credits
 
 ### Media
 
+#### Images
+
+* Images for the Women in Tech / History page.
+All Images were sourced from [Wikimedia Commons](https://commons.wikimedia.org/). With the exception of three, all required attribution under their respective copyright licenses.
+
+    * [Dr Fei-Fei Li](https://commons.wikimedia.org/wiki/File:Fei-Fei_Li_at_AI_for_Good_2017.jpg);
+ Attribution: ITU Pictures, CC BY 2.0 <https://creativecommons.org/licenses/by/2.0>, via Wikimedia Commons
+
+    * [Parisa Tabriz](https://commons.wikimedia.org/wiki/File:Parisa_Tabriz_Blackhat%2717_profile.jpg); Attribution:
+mrisher, CC BY-SA 4.0 <https://creativecommons.org/licenses/by-sa/4.0>, via Wikimedia Commons
+
+    * [Katie Bouman](https://commons.wikimedia.org/wiki/File:Katie_Bouman_answers_questions_about_the_Event_Horizon_Telescope_project.jpg); Attribution:
+Credit: NSF, Public domain, via Wikimedia Commons
+
+    * [Timnit Gebru](https://commons.wikimedia.org/wiki/File:Timnit_Gebru_crop.jpg); Attribution:
+https://commons.wikimedia.org/wiki/File:Timnit_Gebru_crop.jpg
+
+    * [Radia Perlman](https://commons.wikimedia.org/wiki/File:Radia_Perlman_2009.jpg); Attribution:
+Scientist-100 at English Wikipedia, Public domain, via Wikimedia Commons
+
+    * [Frances Allen](https://commons.wikimedia.org/wiki/File:Allen_mg_2545-b.jpg); Attribution:
+Rama, CC BY-SA 2.0 FR <https://creativecommons.org/licenses/by-sa/2.0/fr/deed.en>, via Wikimedia Commons
+
+    * [Barbara Liskov](https://commons.wikimedia.org/wiki/File:Turing_Centenary_Celebration_Liskov.jpg); Attribution:
+Dennis Hamilton from Seattle, Washington, USA, CC BY 2.0 <https://creativecommons.org/licenses/by/2.0>, via Wikimedia Commons
+
+    * [Rana el Kaliouby](https://commons.wikimedia.org/wiki/File:Rana_El_Kaliouby.jpg); Cairue, CC BY-SA 4.0 <https://creativecommons.org/licenses/by-sa/4.0>, via Wikimedia Commons
+
+    * [Ada Lovelace](https://commons.wikimedia.org/wiki/File:Ada_Lovelace_Chalon_portrait.jpg); Attribution:
+Alfred Edward Chalon, Public domain, via Wikimedia Commons
+
+
+* The illustration for the logo and the favicon was found on [Pixabay](https://pixabay.com/vectors/girl-laptop-type-typing-woman-158465/)
+
+
 ### Content
 
-### Design
-
-
+* [ChatGPT](https://openai.com/chatgpt/overview/) was used to review for spelling, grammar and consistency, and enhanced the content. Additionally, ChatGPT helped by providing information on the Women in Tech page.
