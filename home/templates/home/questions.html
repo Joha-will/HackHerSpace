@@ -8,6 +8,13 @@
   <div class="container mx-auto px-4">
     <h1 class="text-4xl font-bold text-center mb-8 text-yellow-900">Questions & Answers</h1>
 
+    <!-- Success Message -->
+    {% if success_message %}
+    <div class="bg-green-100 text-green-800 p-4 rounded-lg mb-6">
+      {{ success_message }}
+    </div>
+    {% endif %}
+
     <!-- Grid Layout for Side-by-Side Sections with Increased Gap and Equal Height -->
     <style>
       .grid-cols-1 > div {
@@ -72,8 +79,7 @@
           </div>
           <button
             type="submit"
-            class="px-4 py-2 bg-yellow-500 text-white rounded hover:bg-yellow-600"
-          >
+            class="px-4 py-2 bg-gray-400 text-black rounded hover:bg-yellow-600">
             Submit Question
           </button>
         </form>
