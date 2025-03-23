@@ -17,7 +17,6 @@
     - [Testing User Stories](#testing-user-stories)
     - [Manual Testing](#manual-testing)
 - [Deployment](#deployment)
-- [Maintenance](#maintenance--updates)
 - [Credits](#credits)
 
 ## ![favicon](static/assets/favicon/favicon-16x16.png) User Experience
@@ -41,8 +40,6 @@ Tasks:
 * Set up Django for user authentication (registration & login).
 * Use Tailwind to design a friendly and accessible UI.
 * Create a discussion forum where mentees can ask general questions
-
-
 
 **2. As a woman interested in computing, I would like to learn more about the contributions of women in both the past and present. I want to discover inspiring female role models who can serve as my ‘heroines’ and motivate me in my own journey.**
 
@@ -144,6 +141,8 @@ Fonts weren’t agreed upon either, so I’m just as curious about the final res
 
 #### Kanban Board
 
+The team utilized a Kanban board to effectively divide tasks and track progress. This approach ensured clear task ownership, streamlined collaboration, and maintained focus on project goals.
+
 The project's Kanban Board can be viewed [here](https://github.com/users/Joha-will/projects/10)
 
 
@@ -167,7 +166,11 @@ On both sides, there are sidebars with links that lead nowhere—purely for aest
 
 #### About
 
+HackHerSpace is a vibrant and inclusive community dedicated to empowering women in technology and STEM fields. Our mission is to bridge the gender gap in tech by fostering a supportive environment where women can connect, learn, and grow together. 
 
+Through mentorship programs, inspiring success stories, and engaging discussions, HackHerSpace aims to provide women of all ages and backgrounds with the tools and confidence they need to thrive in the tech industry. Whether you're a beginner exploring coding for the first time or an experienced professional looking to give back, HackHerSpace offers a platform to share knowledge, build skills, and create lasting connections.
+
+Join us in shaping a future where women are equally represented and celebrated in technology!
 
 #### Mentors
 
@@ -191,12 +194,14 @@ The profiles are arranged in a 3x3 grid, with each card featuring a portrait on 
 
 When hovered over, each card reveals a quote from the featured woman. Below, a short bio highlights her contributions to technology.
 
-#### Contact
-
-
 ## ![favicon](static/assets/favicon/favicon-16x16.png) Technologies Used
 
-* HTML, CSS, Tailwind CSS, Python, JavaScript were used as the languages/frameworks.
+- HTML
+- CSS
+- Tailwind CSS
+- Javascript
+- Python
+- Django
 
 * [Birme](https://www.birme.net/?image_format=webp&quality_webp=60) to resize, crop, compress and change the image format to WEBP.
 
@@ -226,23 +231,49 @@ When hovered over, each card reveals a quote from the featured woman. Below, a s
 
 ### Accessibility
 
+To ensure accessibility, we have provided descriptive `alt` attributes for all images used throughout the project. This allows screen readers to convey meaningful information about the images to visually impaired users.
+
+Additionally, we utilized Tailwind CSS to create a responsive design, ensuring that the website is accessible and user-friendly across various devices and screen sizes. Tailwind's utility-first approach allowed us to implement consistent and adaptive layouts efficiently.
+
+
 ## ![favicon](static/assets/favicon/favicon-16x16.png) Deployment
 
 This project was deployed on Heroku.
 
 Deploying the Project on Heroku:
 
-
-
-
-
-## ![favicon](static/assets/favicon/favicon-16x16.png) Maintenance & Updates
+### Steps for Deployment on Heroku
+The website was deployed to Heroku and can be found [here](https://dating-events-app-512687071453.herokuapp.com/).
+Heroku
+- Heroku is a cloud platform that lets developers create, deploy, monitor and manage apps.
+- You will need a Heroku log-in to be able to deploy a website to Heroku.
+- Once you have logged into Heroku:
+- Click 'New' > 'Create new app'
+- Choose a unique name, choose your region and press 'Create app'
+- Click on 'Settings' and then 'Reveal Config Vars'
+- Add a key of 'DISABLE_COLLECTSTATIC' with a value of '1'.
+- Add a key of 'DATABASE_URL' - the value will be the URL you were emailed when creating your database.
+- Add a key of 'SECRET_KEY' - the value will be any random secret key (google 'secret key generator' and use it to generate a random string of numbers, letters and characters)
+- In your terminal, type the code you will need to install project requirements:
+pip3 install gunicorn~=20.1
+pip3 install -r requirements.txt
+pip3 freeze --local > requirements.txt
+- Create an 'env.py' file at the root directory which contains the following:
+import os
+os.environ["DATABASE_URL"]='CI database URL'
+os.environ["SECRET_KEY"]=" Your secret key"
+- Create a file at the root directory called Procfile. In this file enter: "web: gunicorn my_project.wsgi" (without the quotes)
+- In settings.py, set DEBUG to False.
+- YOU SHOULD ALWAYS SET DEBUG TO FALSE BEFORE DEPLOYING FOR SECURITY
+- Add ",'.herokuapp.com' " (without the double quotes) to the ALLOWED_HOSTS list in settings.py
+- Add, commit and push your code.
+- Go back to Heroku, click on the 'Deploy' tab.
+- Connect your project to GitHub.
+- Scroll to the bottom and click 'Deploy Branch' and your project will be deployed!
 
 ## ![favicon](static/assets/favicon/favicon-16x16.png) Credits
 
-### Media
-
-#### Images
+### Images
 
 * Images for the Women in Tech / History page.
 All Images were sourced from [Wikimedia Commons](https://commons.wikimedia.org/). With the exception of three, all required attribution under their respective copyright licenses.
@@ -273,10 +304,34 @@ Dennis Hamilton from Seattle, Washington, USA, CC BY 2.0 <https://creativecommon
     * [Ada Lovelace](https://commons.wikimedia.org/wiki/File:Ada_Lovelace_Chalon_portrait.jpg); Attribution:
 Alfred Edward Chalon, Public domain, via Wikimedia Commons
 
-
 * The illustration for the logo and the favicon was found on [Pixabay](https://pixabay.com/vectors/girl-laptop-type-typing-woman-158465/)
-
 
 ### Content
 
 * [ChatGPT](https://openai.com/chatgpt/overview/) was used to review for spelling, grammar and consistency, and enhanced the content. Additionally, ChatGPT helped by providing information on the Women in Tech page.
+
+* CoPilot within VSCode for code creation and debugging
+
+### Team Members
+
+The HackHerSpace team, known as the 5Stars Team, is a diverse group of passionate individuals dedicated to empowering women in technology. Each member brings unique skills and perspectives to the project, united by a shared vision of creating an inclusive and supportive community.
+
+This project wouldn't have been possible without the invaluable contributions of the team members.
+
+- **Anthony Nelson** - Django Developer
+- **Joha Wilson** - Django Developer
+- **Mubashir Hussain** - Frony-end Developer
+- **Sonali Patni** - Front-end Developer
+- **Dagmara Szproch** - Content Creator, Developer
+
+Together, the 5Stars Team is committed to bridging the gender gap in tech and inspiring the next generation of women in STEM.
+
+
+## Acknowledgment
+
+We would like to extend our heartfelt gratitude to **Code Institute** for organizing this incredible hackathon and providing us with the opportunity to collaborate, innovate, and bring our creative ideas to life. The hackathon not only allowed us to challenge ourselves but also fostered a spirit of teamwork and learning that will stay with us beyond this project.
+
+The platform and guidance offered by Code Institute have been instrumental in helping us explore new technologies, refine our skills, and create something meaningful. Their commitment to empowering developers and fostering a supportive community is truly inspiring.
+
+Thank you, Code Institute, for encouraging creativity, collaboration, and growth through this amazing initiative!
+

@@ -1,7 +1,7 @@
 from django.shortcuts import redirect, render, reverse
 from django.contrib.auth import login, authenticate
 from django.contrib import messages, auth
-from django.contrib.auth.models import User
+from .models import User
 from .forms import UserForm
 
 
@@ -16,20 +16,10 @@ def sign_up(request):
             password = form.cleaned_data['password']
             user = form.save(commit=False)
             user.set_password(password)
-            user.role = User.CUSTOMER
-            user.save()
-            """
-            first_name = form.cleaned_data['first_name']
-            last_name = form.cleaned_data['last_name']
-            username = form.cleaned_data['username']
-            email = form.cleaned_data['email']
-            password = form.cleaned_data['password']
-            user = User.objects.create_user(first_name=first_name, last_name=last_name, username=username, email=email, password=password)
             user.role = User.STUDENT
             user.save()
-            """
             messages.success(request, 'Your account has been registered successfully!')
-            return redirect('sign_up')
+            return redirect('sign_in')
         else:
             print('invalid form')
             print(form.errors)
