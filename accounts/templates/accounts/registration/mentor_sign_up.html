@@ -6,7 +6,6 @@
 
     <div>
         <h1> Sign Up!</h1>
-    
         <form action="{% url 'mentor_sign_up' %}" method="POST" enctype="multipart/form-data">
             {% csrf_token %}
             {{ form|crispy }}
