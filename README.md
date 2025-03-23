@@ -137,6 +137,16 @@ Fonts weren’t agreed upon either, so I’m just as curious about the final res
 
 ## Technologies Used
 
+* [Birme](https://www.birme.net/?image_format=webp&quality_webp=60) to resize, crop, compress and change the image format to WEBP.
+
+* [Pixabay](https://pixabay.com/vectors/girl-laptop-type-typing-woman-158465/) to downland the images for the logo and favicon.
+
+* [Favicon](https://favicon.io/) to create favicon.
+
+* [GitHub](https://github.com/) to store the project, project board and collaboration.
+
+* [Remove bg](https://www.remove.bg/) to remove the background and add a solid colour background for portrait photos.
+ 
 ## Code
 
 ## Testing
