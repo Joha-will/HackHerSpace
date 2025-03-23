@@ -34,6 +34,8 @@ def questions(request):
     with open(json_file_path, 'r') as file:
         faq_data = json.load(file)
 
+    success_message = None  # Initialize the success message
+
     if request.method == "POST":
         # Get form data
         heading = request.POST.get("heading")
@@ -51,7 +53,8 @@ def questions(request):
         with open(temp_file_path, 'w') as temp_file:
             json.dump(temp_questions, temp_file, indent=4)
 
-        # Redirect to the same page with a success message
-        return redirect('questions')
+        # Set the success message
+        success_message = "Thank you for submitting your question! It is under review and will be displayed once approved."
 
-    return render(request, 'home/questions.html', {'faq_data': faq_data})  # Render the questions.html template
+    return render(request, 'home/questions.html', {'faq_data': faq_data, 'success_message': success_message})
+
