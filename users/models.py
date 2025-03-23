@@ -1,3 +1,4 @@
+from ctypes import addressof
 from django.db import models
 from django.contrib.auth.models import AbstractBaseUser, BaseUserManager
 from django.core.exceptions import ValidationError
@@ -5,25 +6,27 @@ from django.core.exceptions import ValidationError
 
 
 class UserManager(BaseUserManager):
+    def create_user(self, first_name, last_name, username, email, password=None):
 
-    def create_user(self, username, first_name, last_name, email, password=None):
-        if not username:
-            raise ValidationError('Username is required.')
         if not email:
-            raise ValidationError('Email is required.')
-    
+            raise ValueError('User must have an email address')
+        
+        if not username:
+            raise ValueError('User must have a username!')
+
         user = self.model(
-            username=username,
-            first_name=first_name,
-            last_name=last_name,
-            email=self.normalize_email(email),
+            email = self.normalize_email(email),
+            username = username,
+            first_name = first_name,
+            last_name = last_name,
         )
 
         user.set_password(password)
         user.save(using=self._db)
         return user
     
-    def create_superuser(self, username, first_name, last_name, email, password):
+    def create_superuser(self, first_name, last_name, username, email, password=None):
+
         user = self.create_user(
 
             email = self.normalize_email(email),
@@ -83,6 +86,37 @@ class User(AbstractBaseUser):
         elif self.role == 2:
             user_role = 'Student'
         return user_role
+
+
+
+class UserProfile(models.Model):
+    user = models.OneToOneField(User, on_delete=models.CASCADE, blank=True, null=True)
+    cover_photo = models.ImageField(upload_to='cover_photos/', blank=True, null=True)
+    profile_picture = models.ImageField(upload_to='profile_pictures/', blank=True)
+    bio = models.TextField(blank=True)
+    skills = models.CharField(max_length=255, blank=True)
+    linkedin = models.URLField(blank=True, null=True)
+    github = models.URLField(blank=True, null=True)
+    address = models.CharField(max_length=255, blank=True, null=True)
+    city = models.CharField(max_length=50, blank=True, null=True)
+    country =   models.CharField(max_length=200, blank=True, null=True)
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
+
+
+    def __str__(self):
+        return self.user.username
+
+
+
+
+
+
+
+
+
+
+
 
 
 """
