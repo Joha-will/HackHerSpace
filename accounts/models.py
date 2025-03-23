@@ -97,6 +97,7 @@ class UserProfile(models.Model):
     skills = models.CharField(max_length=255, blank=True)
     linkedin = models.URLField(blank=True, null=True)
     github = models.URLField(blank=True, null=True)
+    phone_number = models.CharField(max_length=15, blank=True, null=True)
     address = models.CharField(max_length=255, blank=True, null=True)
     city = models.CharField(max_length=50, blank=True, null=True)
     country =   models.CharField(max_length=200, blank=True, null=True)
@@ -105,7 +106,7 @@ class UserProfile(models.Model):
 
 
     def __str__(self):
-        return self.user.username
+        return self.user.email
 
 
 
