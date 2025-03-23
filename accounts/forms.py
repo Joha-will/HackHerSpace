@@ -1,5 +1,5 @@
 from django import forms
-from .models import User
+from .models import User, Mentor
 
 
 
@@ -25,3 +25,10 @@ class UserForm(forms.ModelForm):
 
         if password != confirm_password:
             raise forms.ValidationError('Passwords do not match.')
+
+
+
+class MentorForm(forms.ModelForm):
+    class Meta:
+        model = Mentor
+        fields = ('mentor_name', 'mentor_certificate',)

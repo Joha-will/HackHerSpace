@@ -1,7 +1,7 @@
 
 # HackHerSpace
 
-![Logo](static/assets/Images/HackHerSpace-logo.webp) 
+![Logo](static/assets/Images/HackHerSpace-logo.png) 
 
 # Table of Contents
 - [User Experience](#user-experience)
@@ -118,10 +118,18 @@ Tasks:
 
 ### Design:
 
-#### Colours/Fonts
+#### Colours
 Our team didn’t initially agree on a specific design for our website. A Windows 95-inspired look was suggested, with a grey navbar and footer, similar to the status bar in Windows 95, featuring a shadow box effect. However, things took their own course, and we ended up with a charming mix—something reminiscent of the wild west of 90s web design, when there were no strict rules. Early 2000s newspaper and university websites were also suggested as inspiration, and the homepage was designed based on one of these sites.
 
-Fonts weren’t agreed upon either, so I’m just as curious about the final result as anyone else! The same goes for wireframes—although some sketches with design suggestions did appear by day two. 😊
+* Colour palette
+
+![Colour palette](static/assets/Images/HackHerSpace-palette-colour.png)
+
+
+#### Typography
+
+The project uses the font-[cursive] utility from Tailwind CSS to apply a cursive font style to specific elements for a playful, retro aesthetic.
+
 
 #### Wireframes
 
@@ -212,6 +220,8 @@ When hovered over, each card reveals a quote from the featured woman. Below, a s
 
 * [Canva](https://www.canva.com/) was used to create logo, wireframes.
 
+* [Coolors](https://coolors.co/) to make a colour palette
+
 ## ![favicon](static/assets/favicon/favicon-16x16.png) Code
 
 ## ![favicon](static/assets/favicon/favicon-16x16.png) Testing
@@ -228,7 +238,7 @@ When hovered over, each card reveals a quote from the featured woman. Below, a s
 
 To ensure accessibility, we have provided descriptive `alt` attributes for all images used throughout the project. This allows screen readers to convey meaningful information about the images to visually impaired users.
 
-Additionally, we utilized Tailwind CSS to create a responsive design, ensuring that the website is accessible and user-friendly across various devices and screen sizes. Tailwind's utility-first approach allowed us to implement consistent and adaptive layouts efficiently.
+Additionally, we utilised Tailwind CSS to create a responsive design, ensuring that the website is accessible and user-friendly across various devices and screen sizes. Tailwind's utility-first approach allowed us to implement consistent and adaptive layouts efficiently.
 
 
 ## ![favicon](static/assets/favicon/favicon-16x16.png) Deployment
@@ -238,7 +248,7 @@ This project was deployed on Heroku.
 Deploying the Project on Heroku:
 
 ### Steps for Deployment on Heroku
-The website was deployed to Heroku and can be found [here](https://dating-events-app-512687071453.herokuapp.com/).
+The website was deployed to Heroku and can be found [here]().
 Heroku
 - Heroku is a cloud platform that lets developers create, deploy, monitor and manage apps.
 - You will need a Heroku log-in to be able to deploy a website to Heroku.

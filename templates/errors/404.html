@@ -1,0 +1,16 @@
+{% extends 'base.html' %} {% load static %} 
+{% block title %} 404 Error 
+{% endblock %} {% block content %}
+
+<div class="flex items-center justify-center h-screen text-center font-cursive">
+  <div>
+    <h1 class="text-4xl font-bold mb-4">Oops 404 Error! Page Not Found</h1>
+    <a
+      href="{% url 'home' %}"
+      class="px-6 py-3 text-lg rounded-full shadow-lg bg=black text-white">
+      Go Back to Home
+    </a>
+  </div>
+</div>
+
+{% endblock %}
