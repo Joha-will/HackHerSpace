@@ -1,7 +1,7 @@
 
 # HackHerSpace
 
-![Logo](static/assets/Images/HackHerSpace-logo.webp) 
+![Logo](static/assets/Images/HackHerSpace-logo.png) 
 
 # Table of Contents
 - [User Experience](#user-experience)
@@ -126,6 +126,9 @@ Our team didn’t initially agree on a specific design for our website. A Window
 
 Fonts weren’t agreed upon either, so I’m just as curious about the final result as anyone else! The same goes for wireframes—although some sketches with design suggestions did appear by day two. 😊
 
+* Colour palette
+![Colour palette](static/assets/Images/HackHerSpace-palette-colour.png)
+
 #### Wireframes
 
 * Hompage Wireframe ![Hpmepage Wireframes](static/assets/wireframes/Homepage.png)
@@ -206,6 +209,8 @@ When hovered over, each card reveals a quote from the featured woman. Below, a s
 * [Remove bg](https://www.remove.bg/) to remove the background and add a solid colour background for portrait photos.
 
 * [Canva](https://www.canva.com/) was used to create logo, wireframes.
+
+* [Coolors](https://coolors.co/) to make a colour palette
 
 ## ![favicon](static/assets/favicon/favicon-16x16.png) Code
 
