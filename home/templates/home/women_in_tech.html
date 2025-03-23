@@ -1,7 +1,348 @@
-{% extends "base.html" %} {% load static %} {% block title %} Women In Tech {%
-endblock %} {% block content %}
-<section id="women-in-tech-hero"></section>
-<section id="historical-women"></section>
-<section id="current-pioneers"></section>
+{% extends "base.html" %} {% load static %} {% block title %} Women In Tech | Past
+and Present {% endblock %} {% block content %}
+<section id="women-in-tech-hero" class="flex items-center justify-center">
+  <h1 class="text-3xl text-center mx-auto">This will be hero section</h1>
+</section>
+<section id="impactful-women" class="p-6">
+  <div class="text-center mb-8">
+    <h2 class="text-3xl font-bold">
+      8 women who made a significant impact in ICT today
+    </h2>
+  </div>
+  <!-- Card container -->
+  <div
+    class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 p-2 md:p-24">
+    <!-- card 1 -->
+    <div class="bg-white shadow-2xl rounded-2xl flex flex-col items-center">
+      <div class="relative group">
+        <img
+          src="{% static 'assets/images/512px-Fei-Fei_Li_at_AI_for_Good_2017.webp' %}"
+          alt="Dr Fei-Fei Li"
+          class="h-full w-full object-cover rounded-t-2xl" />
+        <div
+          class="absolute bottom-0 left-0 right-0 p-2 px-4 text-white duration-500 bg-black opacity-0 group-hover:opacity-100 bg-opacity-40">
+          <div class="flex justify-between w-full">
+            <div class="font-normal">
+              <p class="text-sm">Dr Fei-Fei Li</p>
+              <p class="text-xs">
+                "I imagine a world in which AI is going to make us work more
+                productively, live longer, and have cleaner energy."
+              </p>
+              <p class="text-xs">Attribution:</p>
+              <p class="text-xs">
+                ITU Pictures, CC BY 2.0
+                <a href="https://creativecommons.org/licenses/by/2.0">
+                  creative commons
+                </a>
+                , via Wikimedia Commons
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="p-4">
+        <h5 class="text-xl font-bold mb-2 text-center">Dr Fei-Fei Li</h5>
+        <p class="pb-4 md:pt-4">
+          Dr. Fei-Fei Li is a leading AI researcher, best known for creating
+          ImageNet, which revolutionised deep learning. A strong advocate for
+          ethical AI, she co-founded AI4ALL to promote diversity in technology. In
+          2024, she launched World Labs, focusing on AI for AR/VR and robotics.
+          Through her innovations and advocacy, she continues to shape AI's future
+          for the benefit of humanity.
+        </p>
+      </div>
+    </div>
+
+    <!-- card 2 -->
+    <div class="bg-white shadow-2xl rounded-2xl flex flex-col items-center">
+      <div class="relative group">
+        <img
+          src="{% static 'assets/images/512px-Parisa_Tabriz_Blackhat_17_profile.webp' %}"
+          alt="Parisa Tabriz"
+          class="h-full w-full object-cover rounded-t-2xl" />
+        <div
+          class="absolute bottom-0 left-0 right-0 p-2 px-4 text-white duration-500 bg-black opacity-0 group-hover:opacity-100 bg-opacity-40">
+          <div class="flex justify-between w-full">
+            <div class="font-normal">
+              <p class="text-sm">Parisa Tabriz</p>
+              <p class="text-xs">
+                "I thought Information Security Engineer sounded so boring. Guys in
+                the industry all take it so seriously, so security princess felt
+                suitably whimsical."
+              </p>
+              <p class="text-xs">Attribution:</p>
+              <p class="text-xs">
+                ITU Pictures, CC BY 2.0
+                <a href="https://creativecommons.org/licenses/by/2.0">
+                  creative commons
+                </a>
+                , via Wikimedia Commons
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="p-4">
+        <h5 class="text-xl font-bold mb-2 text-center">Parisa Tabriz</h5>
+        <p class="pb-4 md:pt-4">
+          Parisa Tabriz, known as Google’s "Security Princess", is a leading
+          cybersecurity expert. She has played a key role in making Google Chrome
+          one of the most secure browsers. Passionate about online safety, she
+          develops cutting-edge security protocols while advocating for user
+          privacy. A strong supporter of diversity in tech, she inspires young
+          women to pursue careers in cybersecurity and technology.
+        </p>
+      </div>
+    </div>
+
+    <!-- card 3 -->
+    <div class="bg-white shadow-2xl rounded-2xl flex flex-col items-center">
+      <div class="relative group">
+        <img
+          src="{% static 'assets/Images/512px-Katie_Bouman_answers_questions_about_the_Event_Horizon_Telescope_project.webp' %}"
+          alt="Katie Bouman"
+          class="h-full w-full object-cover rounded-t-2xl" />
+        <div
+          class="absolute bottom-0 left-0 right-0 p-2 px-4 text-white duration-500 bg-black opacity-0 group-hover:opacity-100 bg-opacity-40">
+          <div class="flex justify-between w-full">
+            <div class="font-normal">
+              <p class="text-sm">Katie Bouman</p>
+              <p class="text-xs">
+                "No one of us could've done it alone, it came together because of
+                lots of different people from many backgrounds."
+              </p>
+              <p class="text-xs">Attribution:</p>
+              <p class="text-xs">
+                This file has been identified as being free of known restrictions
+                under copyright law, including all related and neighboring rights.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="p-4">
+        <h5 class="text-xl font-bold mb-2 text-center">Katie Bouman</h5>
+        <p class="pb-4 md:pt-4">
+          Katie Bouman is a computer scientist known for developing the algorithm
+          that captured the first-ever black hole image in 2019. As an MIT PhD
+          candidate, she led data processing for the Event Horizon Telescope. Her
+          work revolutionised astrophysics and showcased the potential of women in
+          STEM, inspiring future generations in science and technology.
+        </p>
+      </div>
+    </div>
+
+    <!-- card 4 -->
+    <div class="bg-white shadow-2xl rounded-2xl flex flex-col items-center">
+      <div class="relative group">
+        <img
+          src="{% static 'assets/Images/512px-Timnit_Gebru.webp' %}"
+          alt="Timnit Gebru"
+          class="h-full w-full object-cover rounded-t-2xl" />
+        <div
+          class="absolute bottom-0 left-0 right-0 p-2 px-4 text-white duration-500 bg-black opacity-0 group-hover:opacity-100 bg-opacity-40">
+          <div class="flex justify-between w-full">
+            <div class="font-normal">
+              <p class="text-sm">Timnit Gebru</p>
+              <p class="text-xs">
+                "AI is not magic, it's not some sort of entity that has its own
+                agency, it's an artifact built by people."
+              </p>
+              <p class="text-xs">Attribution:</p>
+              <p class="text-xs">
+                Source
+                <a
+                  href="https://www.flickr.com/photos/52522100@N07/30671211838
+                    ">
+                  flickr.com
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="p-4">
+        <h5 class="text-xl font-bold mb-2 text-center">Timnit Gebru</h5>
+        <p class="pb-4 md:pt-4">
+          Timnit Gebru is an Ethiopian-American computer scientist and a leading
+          advocate for AI ethics and diversity. She co-authored a key paper on bias
+          in AI, exposing how algorithms can reinforce racial and gender
+          inequalities. A former Google AI ethics researcher, she co-founded Black
+          in AI to boost representation. Her advocacy drives inclusive, ethical AI
+          development.
+        </p>
+      </div>
+    </div>
+
+    <!-- card 5 -->
+    <div class="bg-white shadow-2xl rounded-2xl flex flex-col items-center mt-24">
+      <div class="relative group">
+        <img
+          src="{% static 'assets/images/512px-Fei-Fei_Li_at_AI_for_Good_2017.webp' %}"
+          alt="Dr Fei-Fei Li"
+          class="h-full w-full object-cover rounded-t-2xl" />
+        <div
+          class="absolute bottom-0 left-0 right-0 p-2 px-4 text-white duration-500 bg-black opacity-0 group-hover:opacity-100 bg-opacity-40">
+          <div class="flex justify-between w-full">
+            <div class="font-normal">
+              <p class="text-sm">Dr Fei-Fei Li</p>
+              <p class="text-xs">
+                "I imagine a world in which AI is going to make us work more
+                productively, live longer, and have cleaner energy."
+              </p>
+              <p class="text-xs">Attribution:</p>
+              <p class="text-xs">
+                ITU Pictures, CC BY 2.0
+                <a href="https://creativecommons.org/licenses/by/2.0">
+                  creative commons
+                </a>
+                , via Wikimedia Commons
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="p-4">
+        <h5 class="text-xl font-bold mb-2 text-center">Dr Fei-Fei Li</h5>
+        <p class="pb-4 md:pt-4">
+          Dr. Fei-Fei Li is a leading AI researcher, best known for creating
+          ImageNet, which revolutionised deep learning. A strong advocate for
+          ethical AI, she co-founded AI4ALL to promote diversity in technology. In
+          2024, she launched World Labs, focusing on AI for AR/VR and robotics.
+          Through her innovations and advocacy, she continues to shape AI's future
+          for the benefit of humanity.
+        </p>
+      </div>
+    </div>
+
+    <!-- card 6 -->
+    <div class="bg-white shadow-2xl rounded-2xl flex flex-col items-center mt-24">
+      <div class="relative group">
+        <img
+          src="{% static 'assets/images/512px-Parisa_Tabriz_Blackhat_17_profile.webp' %}"
+          alt="Parisa Tabriz"
+          class="h-full w-full object-cover rounded-t-2xl" />
+        <div
+          class="absolute bottom-0 left-0 right-0 p-2 px-4 text-white duration-500 bg-black opacity-0 group-hover:opacity-100 bg-opacity-40">
+          <div class="flex justify-between w-full">
+            <div class="font-normal">
+              <p class="text-sm">Parisa Tabriz</p>
+              <p class="text-xs">
+                "I thought Information Security Engineer sounded so boring. Guys in
+                the industry all take it so seriously, so security princess felt
+                suitably whimsical."
+              </p>
+              <p class="text-xs">Attribution:</p>
+              <p class="text-xs">
+                ITU Pictures, CC BY 2.0
+                <a href="https://creativecommons.org/licenses/by/2.0">
+                  creative commons
+                </a>
+                , via Wikimedia Commons
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="p-4">
+        <h5 class="text-xl font-bold mb-2 text-center">Parisa Tabriz</h5>
+        <p class="pb-4 md:pt-4">
+          Parisa Tabriz, known as Google’s "Security Princess", is a leading
+          cybersecurity expert. She has played a key role in making Google Chrome
+          one of the most secure browsers. Passionate about online safety, she
+          develops cutting-edge security protocols while advocating for user
+          privacy. A strong supporter of diversity in tech, she inspires young
+          women to pursue careers in cybersecurity and technology.
+        </p>
+      </div>
+    </div>
+
+    <!-- card 7 -->
+    <div class="bg-white shadow-2xl rounded-2xl flex flex-col items-center mt-24">
+      <div class="relative group">
+        <img
+          src="{% static 'assets/Images/512px-Katie_Bouman_answers_questions_about_the_Event_Horizon_Telescope_project.webp' %}"
+          alt="Katie Bouman"
+          class="h-full w-full object-cover rounded-t-2xl" />
+        <div
+          class="absolute bottom-0 left-0 right-0 p-2 px-4 text-white duration-500 bg-black opacity-0 group-hover:opacity-100 bg-opacity-40">
+          <div class="flex justify-between w-full">
+            <div class="font-normal">
+              <p class="text-sm">Katie Bouman</p>
+              <p class="text-xs">
+                "No one of us could've done it alone, it came together because of
+                lots of different people from many backgrounds."
+              </p>
+              <p class="text-xs">Attribution:</p>
+              <p class="text-xs">
+                This file has been identified as being free of known restrictions
+                under copyright law, including all related and neighboring rights.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="p-4">
+        <h5 class="text-xl font-bold mb-2 text-center">Katie Bouman</h5>
+        <p class="pb-4 md:pt-4">
+          Katie Bouman is a computer scientist known for developing the algorithm
+          that captured the first-ever black hole image in 2019. As an MIT PhD
+          candidate, she led data processing for the Event Horizon Telescope. Her
+          work revolutionised astrophysics and showcased the potential of women in
+          STEM, inspiring future generations in science and technology.
+        </p>
+      </div>
+    </div>
+
+    <!-- card 8 -->
+    <div class="bg-white shadow-2xl rounded-2xl flex flex-col items-center mt-24">
+      <div class="relative group">
+        <img
+          src="{% static 'assets/Images/512px-Timnit_Gebru.webp' %}"
+          alt="Timnit Gebru"
+          class="h-full w-full object-cover rounded-t-2xl" />
+        <div
+          class="absolute bottom-0 left-0 right-0 p-2 px-4 text-white duration-500 bg-black opacity-0 group-hover:opacity-100 bg-opacity-40">
+          <div class="flex justify-between w-full">
+            <div class="font-normal">
+              <p class="text-sm">Timnit Gebru</p>
+              <p class="text-xs">
+                "AI is not magic, it's not some sort of entity that has its own
+                agency, it's an artifact built by people."
+              </p>
+              <p class="text-xs">Attribution:</p>
+              <p class="text-xs">
+                Source
+                <a
+                  href="https://www.flickr.com/photos/52522100@N07/30671211838
+                      ">
+                  flickr.com
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="p-4">
+        <h5 class="text-xl font-bold mb-2 text-center">Timnit Gebru</h5>
+        <p class="pb-4 md:pt-4">
+          Timnit Gebru is an Ethiopian-American computer scientist and a leading
+          advocate for AI ethics and diversity. She co-authored a key paper on bias
+          in AI, exposing how algorithms can reinforce racial and gender
+          inequalities. A former Google AI ethics researcher, she co-founded Black
+          in AI to boost representation. Her advocacy drives inclusive, ethical AI
+          development.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="ada-lovelace" class="flex items-center justify-center"></section>
 
 {% endblock %}
