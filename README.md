@@ -101,9 +101,9 @@ Tasks:
 
 ### Design:
 
-#### Colour Scheme
+Our team didn’t initially agree on a specific design for our website. A Windows 95-inspired look was suggested, with a grey navbar and footer, similar to the status bar in Windows 95, featuring a shadow box effect. However, things took their own course, and we ended up with a charming mix—something reminiscent of the wild west of 90s web design, when there were no strict rules.
 
-#### Fonts
+Fonts weren’t agreed upon either, so I’m just as curious about the final result as anyone else! The same goes for wireframes—although some sketches with design suggestions did appear by day two. 😊
 
 #### Wireframes
 
