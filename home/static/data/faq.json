@@ -1,0 +1,115 @@
+{
+    "Python": [
+        {
+            "question": "What are Python decorators?",
+            "answer": "Decorators are functions that modify the behavior of another function or method without changing its actual code."
+        },
+        {
+            "question": "What is the difference between a list and a tuple in Python?",
+            "answer": "Lists are mutable, meaning they can be changed, while tuples are immutable and cannot be modified after creation."
+        },
+        {
+            "question": "What is Python's GIL (Global Interpreter Lock)?",
+            "answer": "The GIL is a mutex that protects access to Python objects, preventing multiple threads from executing Python bytecode simultaneously."
+        },
+        {
+            "question": "What are Python comprehensions?",
+            "answer": "Comprehensions are a concise way to create lists, dictionaries, or sets using a single line of code."
+        },
+        {
+            "question": "What is the difference between shallow copy and deep copy in Python?",
+            "answer": "A shallow copy copies the object but not the objects it references, while a deep copy copies the object and all objects it references."
+        }
+    ],
+    "Django": [
+        {
+            "question": "What is Django ORM?",
+            "answer": "Django ORM (Object-Relational Mapping) allows developers to interact with the database using Python instead of SQL."
+        },
+        {
+            "question": "What is the purpose of Django middleware?",
+            "answer": "Middleware is a way to process requests globally before they reach the view or after the response is sent to the client."
+        },
+        {
+            "question": "What is the difference between `null=True` and `blank=True` in Django models?",
+            "answer": "`null=True` allows the database to store NULL values, while `blank=True` allows the field to be left empty in forms."
+        },
+        {
+            "question": "What is the use of the `@login_required` decorator in Django?",
+            "answer": "The `@login_required` decorator restricts access to a view, allowing only authenticated users to access it."
+        },
+        {
+            "question": "What is the difference between `render()` and `redirect()` in Django?",
+            "answer": "`render()` returns an HTTP response with a template, while `redirect()` returns an HTTP response that redirects to another URL."
+        }
+    ],
+    "HTML": [
+        {
+            "question": "What is the difference between inline and block elements in HTML?",
+            "answer": "Inline elements do not start on a new line and only take up as much width as necessary, while block elements start on a new line and take up the full width available."
+        },
+        {
+            "question": "What are meta tags in HTML?",
+            "answer": "Meta tags provide metadata about the HTML document, such as description, keywords, and viewport settings."
+        },
+        {
+    
+            "question": "What is the purpose of the footer tag in HTML?",
+            "answer": "The footer tag represents footer content for its nearest sectioning content or root element, typically containing information like authorship, copyright, or related links."
+        
+           
+        },
+        {
+            "question": "What is the purpose of the header tag in HTML?",
+            "answer": "The `<header>` tag represents introductory content or a set of navigational links for a section or page."
+        },
+        {
+            "question": "What is the difference between `id` and `class` attributes in HTML?",
+            "answer": "`id` is a unique identifier for an element, while `class` is used to group multiple elements for styling or scripting."
+        }
+    ],
+    "CSS": [
+        {
+            "question": "What is the difference between `relative`, `absolute`, and `fixed` positioning in CSS?",
+            "answer": "Relative is positioned relative to its normal position, absolute is positioned relative to the nearest positioned ancestor, and fixed is positioned relative to the viewport."
+        },
+        {
+            "question": "What is the difference between `em` and `rem` units in CSS?",
+            "answer": "`em` is relative to the parent element’s font size, while `rem` is relative to the root element’s font size."
+        },
+        {
+            "question": "What is the difference between `inline`, `block`, and `inline-block` elements in CSS?",
+            "answer": "`inline` elements do not start on a new line, `block` elements start on a new line, and `inline-block` elements behave like inline elements but allow block-level styling."
+        },
+        {
+            "question": "What is a CSS pseudo-class?",
+            "answer": "A pseudo-class is used to define the special state of an element, such as `:hover` or `:nth-child()`."
+        },
+        {
+            "question": "What is the difference between `position: sticky` and `position: fixed`?",
+            "answer": "`sticky` is relative until a defined scroll position is reached, while `fixed` is always relative to the viewport."
+        }
+    ],
+    "JavaScript": [
+        {
+            "question": "What is event delegation in JavaScript?",
+            "answer": "Event delegation is a technique where a parent element listens for events on its child elements instead of attaching event listeners to each child individually."
+        },
+        {
+            "question": "What is the difference between `let`, `const`, and `var`?",
+            "answer": "`var` is function-scoped, `let` is block-scoped, and `const` is block-scoped and cannot be reassigned."
+        },
+        {
+            "question": "What is the difference between synchronous and asynchronous JavaScript?",
+            "answer": "Synchronous JavaScript executes code sequentially, while asynchronous JavaScript allows non-blocking operations using callbacks, promises, or async/await."
+        },
+        {
+            "question": "What is the purpose of the `this` keyword in JavaScript?",
+            "answer": "`this` refers to the object that is currently executing the code."
+        },
+        {
+            "question": "What is the difference between `==` and `===` in JavaScript?",
+            "answer": "`==` checks for value equality with type coercion, while `===` checks for strict equality without type coercion."
+        }
+    ]
+}
