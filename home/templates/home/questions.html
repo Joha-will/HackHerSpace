@@ -8,14 +8,15 @@
   <div class="container mx-auto px-4">
     <h1 class="text-4xl font-bold text-center mb-8 text-yellow-900">Questions & Answers</h1>
 
-    <!-- Success Message -->
-    {% if success_message %}
-    <div class="bg-green-100 text-green-800 p-4 rounded-lg mb-6">
-      {{ success_message }}
-    </div>
-    {% endif %}
-
-    <!-- Grid Layout for Two Sections -->
+    <!-- Grid Layout for Side-by-Side Sections with Increased Gap and Equal Height -->
+    <style>
+      .grid-cols-1 > div {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: auto;
+      }
+    </style>
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
       <!-- Questions & Answers Section -->
       <div class="bg-yellow-200 p-6 rounded-lg shadow">
@@ -42,7 +43,7 @@
         </div>
       </div>
 
-      <!-- Submit Questions Form Section -->
+      <!-- Question Submission Form -->
       <div class="bg-white p-6 rounded-lg shadow">
         <h2 class="text-2xl font-bold text-gray-900 mb-4">Submit a Question</h2>
         <form id="question-form" method="POST">

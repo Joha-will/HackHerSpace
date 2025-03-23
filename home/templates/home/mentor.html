@@ -1,0 +1,59 @@
+{% extends "base.html" %} {% load static %} {% block title %} Home {% endblock %}
+{% block content %}
+    <section class="max-w-8xl mx-auto py-12 px-6">
+        <h2 class="text-3xl font-bold text-center text-gray-800">Select Your Teacher</h2>
+        <p class="text-center text-gray-600 mt-2">Select the perfect teacher for your learning journey. Browse through expert educators, view their profiles, and choose the one that best fits your needs. Start learning with the right mentor today!</p>
+
+        <!-- Full-Width Feedback List -->
+        <div class="mt-8 space-y-6">
+            <!-- Feedback Block 1 -->
+            <div class=" bg-white p-6 flex flex-col md:flex-row items-center md:justify-between space-y-4 md:space-y-0 border border-black">
+                <div class="flex items-center space-x-6 ">
+                    <img src="{% static '/assets/images/Sophia.jpeg' %}" alt="User 1"
+                        class="w-24 h-24 ">
+                    <div>
+                        <h3 class="text-xl font-semibold text-gray-800"> Sophia Rivera  </h3>
+                        <p class="text-gray-500 text-sm">Senior Software Engineer</p>
+                        <p class="text-gray-700 mt-3">
+                            <ul>
+                                <li> * Languages: HTML, C++, Pascal, Assembly</li>
+                                <li>* Operating System & GUI Frameworks:Win32 API (1993), GTK+ (1997), Qt (1995)
+                                </li>
+                                <li> * Database & Backend Frameworks: Microsoft SQL Server (1993), Oracle PL/SQL (1992), PostgreSQL (1996)</li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+                <a href="#" class="text-grey-900 px-5 py-2  font-semibold hover:bg-blue-700">
+                    View Profile
+                </a>
+            </div>
+        </div>
+     <!-- Full-Width Feedback List -->
+     <div class="mt-8 space-y-6">
+        <!-- Feedback Block 1 -->
+        <div class=" bg-white p-6 flex flex-col md:flex-row items-center md:justify-between space-y-4 md:space-y-0 border border-black">
+            <div class="flex items-center space-x-6 ">
+                <img src="{% static '/assets/images/Sophia.jpeg' %}" alt="User 1"
+                    class="w-24 h-24 ">
+                <div>
+                    <h3 class="text-xl font-semibold text-gray-800"> Sophia Rivera  </h3>
+                    <p class="text-gray-500 text-sm">Senior Software Engineer</p>
+                    <p class="text-gray-700 mt-3">
+                        <ul>
+                            <li> * Languages: HTML, C++, Pascal, Assembly</li>
+                            <li>* Operating System & GUI Frameworks:Win32 API (1993), GTK+ (1997), Qt (1995)
+                            </li>
+                            <li> * Database & Backend Frameworks: Microsoft SQL Server (1993), Oracle PL/SQL (1992), PostgreSQL (1996)</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+            <a href="#" class="text-grey-900 px-5 py-2  font-semibold hover:bg-blue-700">
+                View Profile
+            </a>
+        </div>
+    </div>
+    </section>
+
+{% endblock %}
