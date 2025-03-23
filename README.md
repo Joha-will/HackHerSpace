@@ -101,11 +101,15 @@ Tasks:
 
 ### Design:
 
-#### Colour Scheme
+#### Colours/Fonts
+Our team didn’t initially agree on a specific design for our website. A Windows 95-inspired look was suggested, with a grey navbar and footer, similar to the status bar in Windows 95, featuring a shadow box effect. However, things took their own course, and we ended up with a charming mix—something reminiscent of the wild west of 90s web design, when there were no strict rules. Early 2000s newspaper and university websites were also suggested as inspiration, and the homepage was designed based on one of these sites.
 
-#### Fonts
+Fonts weren’t agreed upon either, so I’m just as curious about the final result as anyone else! The same goes for wireframes—although some sketches with design suggestions did appear by day two. 😊
 
 #### Wireframes
+
+![Hpmepage Wireframes sketch](image.png)
+![Women in Tech Wireframe sketch](image-1.png)
 
 ## Agile Methodology
 
@@ -133,6 +137,16 @@ Tasks:
 
 ## Technologies Used
 
+* [Birme](https://www.birme.net/?image_format=webp&quality_webp=60) to resize, crop, compress and change the image format to WEBP.
+
+* [Pixabay](https://pixabay.com/vectors/girl-laptop-type-typing-woman-158465/) to downland the images for the logo and favicon.
+
+* [Favicon](https://favicon.io/) to create favicon.
+
+* [GitHub](https://github.com/) to store the project, project board and collaboration.
+
+* [Remove bg](https://www.remove.bg/) to remove the background and add a solid colour background for portrait photos.
+ 
 ## Code
 
 ## Testing
