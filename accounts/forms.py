@@ -3,7 +3,6 @@ from .models import User
 
 
 
-
 class UserForm(forms.ModelForm):
     password = forms.CharField(
         label="Password",
@@ -16,7 +15,7 @@ class UserForm(forms.ModelForm):
 
     class Meta:
         model = User
-        fields = ('username', 'first_name', 'last_name', 'email', 'password',)
+        fields = ('username', 'first_name', 'last_name', 'email', 'phone_number', 'password',)
 
     
     def clean(self):
