@@ -86,16 +86,12 @@ WSGI_APPLICATION = 'she_mentors_main.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': BASE_DIR / 'db.sqlite3',
-#     }
-# }
-
-# DATABASES = {
-#     'default': dj_database_url.config(default=os.getenv('DATABASE_URL'))
-# }
+#DATABASES = {
+#    'default': {
+#            'ENGINE': 'django.db.backends.sqlite3',
+#        'NAME': BASE_DIR / 'db.sqlite3',
+#    }
+#}
 
 
 
@@ -114,14 +110,6 @@ else:
     DATABASES = {
         'default': dj_database_url.config(default='postgres://postgres:DB_password123@localhost:5432/hack_her_space_db')
     }
-
-# 
-#     DATABASES = {
-#         'default': {
-#             'ENGINE': 'django.db.backends.sqlite3',
-#             'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-#         }
-#     }
 
 
 
