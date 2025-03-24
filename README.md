@@ -3,6 +3,8 @@
 
 ![Logo](static/assets/Images/HackHerSpace-logo.png) 
 
+[View the Live Project Here](https://hackherspace-5aa8dc5907fb.herokuapp.com/)
+
 # Table of Contents
 - [User Experience](#user-experience)
     - [Project Goals](#project-goals)
