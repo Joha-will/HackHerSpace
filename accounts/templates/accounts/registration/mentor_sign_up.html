@@ -4,41 +4,58 @@
 
 {% block content %}
 
-    <div>
-        <h1> Sign Up!</h1>
-        <form action="{% url 'mentor_sign_up' %}" method="POST" enctype="multipart/form-data">
-            {% csrf_token %}
-            {{ form|crispy }}
-            {{mentor_form|crispy }}
+<div class="flex items-center justify-center min-h-screen font-[cursive]">
+    <div
+      class="w-full max-w-md p-6 mt-4 mb-4 shadow-lg font-mono font-bold border-2 border-black">
+      <!-- 90s Header -->
+      <h2
+        class="text-2xl text-center font-bold tracking-widest text-grey-700 uppercase font-[cursive]">
+        ✨ Sign Up and Become a Mentor✨
+      </h2>
+      <p class="text-center text-grey-700 bg-gray-400 mt-2 italic">
+        Join the future of tech!
+      </p>
+  
+      <!-- Signup Form -->
+      <form action="{% url 'mentor_sign_up' %}" method="POST" enctype="multipart/form-data" class="mt-6 space-y-4 font-[cursive]">
+        {% csrf_token %} 
+        {{mentor_form|crispy }}
+        {{ form|crispy }}
 
-            <div class="">
-
-                <ul class="errorlist">
-                    {% for field in form %}
-                        {% if field.errors %}
-                            {% for error in field.errors %}
-                            <li class="bg-danger">{{error}}</li>
-                            {% endfor %}
-                        {% endif %}
+        <ul>
+            {% for field in form %}
+                {% if field.errors %}
+                    {% for error in field.errors %}
+                    <li class="bg-red-600">{{error}}</li>
                     {% endfor %}
+                {% endif %}
+            {% endfor %}
 
-                    <li class="bg-danger">{{form.non_field_errors}}</li>
-                </ul>
-                <div class="">
-                    <button type="submit">Sign Up</button>
-                </div>
-                <div class="">
-                    <a href="{% url 'sign_in' %}">Already have an account? Sign-In here.</a>
-                </div>
-                <div>
-                    <div>
-                        {% include 'includes/alerts.html' %}
-                    </div>
-                </div>
+            <li class="bg-red-600">{{form.non_field_errors}}</li>
+        </ul>
+  
+        <button
+          type="submit"
+          class="w-full py-2 text-lg font-bold border-2 border-black hover:bg-grey-700">
+          🚀 Sign Up
+        </button>
+        <div>
+            {% include 'includes/alerts.html' %}
+        </div>
 
-            </div>
-        </form>
-    
+      </form>
+  
+      <!-- 90s Footer -->
+      <p class="mt-4 text-center text-grey-700 text-sm font-[cursive]">
+        Already have an account?
+        <a href="{% url 'sign_in' %}" class="text-yellow-300 hover:underline">
+          Sign In here
+        </a>
+      </p>
     </div>
+  </div>
+
 
 {% endblock %}
+
+
