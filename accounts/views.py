@@ -46,7 +46,7 @@ def sign_in(request):
 
                 if user is not None:
                     auth.login(request, user)
-                    return redirect('dashboard')
+                    return redirect('home')
                 else:
                     messages.error(request, 'Invalid credentials')
                     return redirect('sign_in')
@@ -104,4 +104,4 @@ def mentor_sign_up(request):
 
 
 def dashboard(request):
-    pass
+    return render(request, 'accounts/dashboard.html')
