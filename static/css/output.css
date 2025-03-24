@@ -733,6 +733,10 @@ video {
   height: auto;
 }
 
+.h-11 {
+  height: 2.75rem;
+}
+
 .min-h-screen {
   min-height: 100vh;
 }
@@ -767,6 +771,10 @@ video {
 
 .w-24 {
   width: 6rem;
+}
+
+.w-11 {
+  width: 2.75rem;
 }
 
 .max-w-4xl {
@@ -1334,6 +1342,11 @@ video {
 .focus\:ring-yellow-500:focus {
   --tw-ring-opacity: 1;
   --tw-ring-color: rgb(234 179 8 / var(--tw-ring-opacity));
+}
+
+.focus\:ring-yellow-300:focus {
+  --tw-ring-opacity: 1;
+  --tw-ring-color: rgb(253 224 71 / var(--tw-ring-opacity));
 }
 
 .group:hover .group-hover\:opacity-100 {

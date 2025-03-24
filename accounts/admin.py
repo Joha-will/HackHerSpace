@@ -12,6 +12,11 @@ class CustomUserAdmin(UserAdmin):
     fieldsets = ()
 
 
+class MentorAdmin(admin.ModelAdmin):
+    list_display = ('uer', 'mentor_name', 'is_approved', 'created_at',)
+    list_display_links = ('user', 'mentor_name',)
+
+
 admin.site.register(User, CustomUserAdmin)
 admin.site.register(UserProfile)
 admin.site.register(Mentor)
