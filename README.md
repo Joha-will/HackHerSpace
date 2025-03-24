@@ -123,7 +123,7 @@ Our team didn’t initially agree on a specific design for our website. A Window
 
 * Colour palette
 
-![Colour palette](static/assets/Images/HackHerSpace-palette-colour.png)
+<img src="static/assets/Images/HackHerSpace-palette-colour.png" width="700" alt="Colour palette">
 
 
 #### Typography
@@ -171,11 +171,7 @@ On both sides, there are sidebars with links that lead nowhere—purely for aest
 
 #### About
 
-HackHerSpace is a vibrant and inclusive community dedicated to empowering women in technology and STEM fields. Our mission is to bridge the gender gap in tech by fostering a supportive environment where women can connect, learn, and grow together. 
-
-Through mentorship programs, inspiring success stories, and engaging discussions, HackHerSpace aims to provide women of all ages and backgrounds with the tools and confidence they need to thrive in the tech industry. Whether you're a beginner exploring coding for the first time or an experienced professional looking to give back, HackHerSpace offers a platform to share knowledge, build skills, and create lasting connections.
-
-Join us in shaping a future where women are equally represented and celebrated in technology!
+The About page consists of two sections: About Us and Our Mission, each displayed on a black background with white text and yellow headings.
 
 #### Mentors
 
@@ -191,13 +187,17 @@ On the left side, there are five topics to choose from: Python, CSS, JavaScript,
 
 On the right side, there is a form where users can select a topic (Python, JavaScript, etc.) and enter their question in a text area. Below, a "Submit Question" button allows users to send their queries.
 
-#### History
+#### Women in Tech
 
 The Women in Tech page showcases nine pioneering women selected by our team, ranging from Ada Lovelace and Frances Allen to our youngest heroine, Katie Bouman.
 
 The profiles are arranged in a 3x3 grid, with each card featuring a portrait on a solid, colourful background. The original backgrounds were removed and replaced with warm tones to contrast with the grey 90s aesthetic.
 
 When hovered over, each card reveals a quote from the featured woman. Below, a short bio highlights her contributions to technology.
+
+#### Contact
+
+The Contact page features a short introduction to our 5Star Team, followed by five cards displayed on a dark background. Each card includes the team member's name, position, a short description, and an image.
 
 ## ![favicon](static/assets/favicon/favicon-16x16.png) Technologies Used
 
@@ -232,6 +232,12 @@ When hovered over, each card reveals a quote from the featured woman. Below, a s
 
 ### Testing User Stories
 
+**2. As a woman interested in computing, I would like to learn more about the contributions of women in both the past and present. I want to discover inspiring female role models who can serve as my ‘heroines’ and motivate me in my own journey.**
+
+<img src="static/assets/testing/user-story2.png" width="300" alt="Women in Tech page with profiles of historical and modern figures. The design is engaging with images, quotes, and contributions">
+
+Women in Tech page with profiles of historical and modern figures. The design is engaging with images, quotes, and contributions
+
 ### Manual Testing
 
 ### Accessibility
@@ -248,8 +254,9 @@ This project was deployed on Heroku.
 Deploying the Project on Heroku:
 
 ### Steps for Deployment on Heroku
-The website was deployed to Heroku and can be found [here]().
-Heroku
+
+The website was deployed to Heroku and can be found [here](https://hackherspace-5aa8dc5907fb.herokuapp.com/).
+
 - Heroku is a cloud platform that lets developers create, deploy, monitor and manage apps.
 - You will need a Heroku log-in to be able to deploy a website to Heroku.
 - Once you have logged into Heroku:
