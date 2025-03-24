@@ -46,14 +46,23 @@ def sign_in(request):
 
                 if user is not None:
                     auth.login(request, user)
-                    return redirect('home')
+                    return redirect('dashboard')
                 else:
-                    return render(request, 'accounts/registration/sign_in.html', {'error': 'Invalid credentials'})
+                    messages.error(request, 'Invalid credentials')
+                    return redirect('sign_in')
 
     except Exception as e:
         print(f"Error occurred while signing in: {e}")
 
     return render(request, 'accounts/registration/sign_in.html')
+
+
+
+def sign_out(request):
+    auth.logout(request)
+    messages.success(request, 'You have been signed out successfully!')
+    return redirect('sign_in')
+
 
 
 def mentor_sign_up(request):
@@ -93,9 +102,6 @@ def mentor_sign_up(request):
     return render(request, 'accounts/registration/mentor_sign_up.html', context)
 
 
-def sign_out(request):
-    auth.sign_out(request)
-    return redirect('home')
 
-
-
+def dashboard(request):
+    pass
