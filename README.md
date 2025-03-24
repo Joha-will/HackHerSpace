@@ -232,6 +232,12 @@ The Contact page features a short introduction to our 5Star Team, followed by fi
 
 ### Testing User Stories
 
+**2. As a woman interested in computing, I would like to learn more about the contributions of women in both the past and present. I want to discover inspiring female role models who can serve as my ‘heroines’ and motivate me in my own journey.**
+
+<img src="static/assets/testing/user-story2.png" width="300" alt="Women in Tech page with profiles of historical and modern figures. The design is engaging with images, quotes, and contributions">
+
+Women in Tech page with profiles of historical and modern figures. The design is engaging with images, quotes, and contributions
+
 ### Manual Testing
 
 ### Accessibility
