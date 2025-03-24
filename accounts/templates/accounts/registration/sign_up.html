@@ -1,44 +1,36 @@
-{% extends "base.html" %}
-{% load static %}
-{% load tailwind_filters %}
+{% extends "base.html" %} {% load static %} {% load tailwind_filters %} {% block
+content %}
 
-{% block content %}
+<div class="flex items-center justify-center min-h-screen font-[cursive]">
+  <div
+    class="w-full max-w-md p-6 mt-4 mb-4 shadow-lg font-mono font-bold border-2 border-black">
+    <!-- 90s Header -->
+    <h2
+      class="text-2xl text-center font-bold tracking-widest text-grey-700 uppercase font-[cursive]">
+      ✨ Register ✨
+    </h2>
+    <p class="text-center text-grey-700 bg-gray-400 mt-2 italic">
+      Join the future of tech!
+    </p>
 
-    <div>
-        <h1> Sign Up!</h1>
-    
-        <form action="{% url 'sign_up' %}" method="POST">
-            {% csrf_token %}
-            {{ form|crispy }}
+    <!-- Signup Form -->
+    <form method="POST" class="mt-6 space-y-4 font-[cursive]">
+      {% csrf_token %} {{ form|crispy }}
 
-            <div class="">
+      <button
+        type="submit"
+        class="w-full py-2 text-lg font-bold border-2 border-black hover:bg-grey-700">
+        🚀 Register
+      </button>
+    </form>
 
-                <ul class="errorlist">
-                    {% for field in form %}
-                        {% if field.errors %}
-                            {% for error in field.errors %}
-                            <li class="bg-danger">{{error}}</li>
-                            {% endfor %}
-                        {% endif %}
-                    {% endfor %}
-
-                    <li class="bg-danger">{{form.non_field_errors}}</li>
-                </ul>
-                <div class="">
-                    <button type="submit">Sign Up</button>
-                </div>
-                <div class="">
-                    <a href="{% url 'sign_in' %}">Already have an account? Sign-In here.</a>
-                </div>
-                <div>
-                    <div>
-                        {% include 'includes/alerts.html' %}
-                    </div>
-                </div>
-
-            </div>
-        </form>
-    
-    </div>
-
+    <!-- 90s Footer -->
+    <p class="mt-4 text-center text-grey-700 text-sm font-[cursive]">
+      Already have an account?
+      <a href="{% url 'sign_in' %}" class="text-yellow-300 hover:underline">
+        Login Here
+      </a>
+    </p>
+  </div>
+</div>
 {% endblock %}
